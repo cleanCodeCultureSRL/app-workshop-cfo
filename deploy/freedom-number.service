@@ -1,0 +1,32 @@
+# /etc/systemd/system/freedom-number.service
+# Freedom Number · Live rulează ca utilizator dedicat, nu ca root, și repornește singură.
+# Instalat de deploy/remote.sh.
+
+[Unit]
+Description=Freedom Number Live — aplicația de sală pentru workshopul CFO
+After=network.target
+
+[Service]
+Type=simple
+User=freedomapp
+Group=freedomapp
+WorkingDirectory=/var/www/freedom-number
+Environment=NODE_ENV=production
+# Portul intern; nginx trimite aici. (ai-course e pe 8788, first7 pe 3000, Turnul de Control pe 8789)
+Environment=PORT=8794
+ExecStart=/var/www/freedom-number/node_modules/.bin/tsx server/index.ts
+Restart=always
+RestartSec=3
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/www/freedom-number/data
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=freedom-number
+
+[Install]
+WantedBy=multi-user.target
