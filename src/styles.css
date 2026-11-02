@@ -1,5 +1,5 @@
 /* Stilurile aplicației (login, bare, meniu, panoul Sala) stau în layer(app), sub utilitarele Tailwind ale slide-urilor.
-   Paleta: cfo.ro - navy #000942, navy-dark #0B1122, cyan #00C4F5 → albastru #0055FF, Inter / Inter Tight. */
+   Paleta: cfo.ro - navy #000942, navy-dark #0B1122, cyan #00C4F5 → albastru #0055FF, Manrope / Source Sans 3. */
 @layer app {
 :root {
   --bg: #000942;
@@ -19,8 +19,8 @@
   --red: #f26d6d;
   --red-dim: rgba(242, 109, 109, 0.14);
   --ink: #060b28;
-  --sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --display: "Inter Tight", "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --sans: "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --display: "Manrope", "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --r: 10px;
   --r-lg: 16px;

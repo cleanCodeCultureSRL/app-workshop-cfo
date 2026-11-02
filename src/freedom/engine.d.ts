@@ -51,6 +51,8 @@ export interface MountHandle {
 
 export const PAGES: FnPage[];
 export function fresh(): FnState;
+export function exemplu(): FnState;
+export function printDoc(el: Element, margin: string, p?: Element | null, k?: string): void;
 export function normalize(raw: unknown): FnState;
 export function calc(s: FnState): Record<string, unknown>;
 export function mount(el: HTMLElement, pageId: string, opts: MountOpts): MountHandle;

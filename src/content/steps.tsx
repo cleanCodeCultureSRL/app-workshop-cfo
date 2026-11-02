@@ -38,7 +38,7 @@ const CHAPTER_START: Record<string, string> = {
   amanat: "deschidere", calcul: "obiective", spv: "vehicul", ritm1: "ritm", cai: "cale", stadii: "stadii", anEchipa: "an", tIntro: "terms", contract: "act",
 };
 /** Paginile în care participantul completează ceva în aplicație. */
-const WORK = new Set(["cai", "cale", "viataDorita", "ceCauti", "rolFirma", "qSperanta", "qRetragere", "qAni", "venituri", "buget", "buget1", "buget2", "oneoff", "fonduri", "urma", "freedom", "freedom2", "spv2", "firma", "exitQ", "exitUnde", "multiplu", "multipluDate", "multipluNote", "multipluCalc", "firmaCale", "concluzii", "ritm1", "ritmA", "ritmB", "ritmC", "ritm2", "ritm3", "stadii", "crize", "exitNext", "anEnt", "dest", "plan", "tIntro", "tT", "tE", "tR", "tM", "tS", "contract"]);
+const WORK = new Set(["contextZi", "cai", "cale", "curba", "parghii", "viataDorita", "ceCauti", "rolFirma", "qSperanta", "qRetragere", "qAni", "venituri", "buget", "buget1", "buget2", "oneoff", "fonduri", "urma", "freedom", "freedom2", "spv2", "firma", "exitQ", "exitUnde", "multiplu", "multipluDate", "multipluNote", "multipluCalc", "firmaCale", "concluzii", "ritm1", "ritmA", "ritmB", "ritmC", "ritm2", "ritm3", "stadii", "crize", "exitNext", "anEnt", "dest", "plan", "tIntro", "tT", "tE", "tR", "tM", "tS", "contract"]);
 
 export { stepIdOfPage };
 
@@ -47,8 +47,6 @@ const INTRO: Record<string, ReactNode> = {
   amanat: <Amanat />, obtii: <Obtii />, regula: <Regula />, teza: <Teza />, viataAzi: <ViataAzi />, perechi: <Perechi />, capitolUrm: <CapitolUrm />, calcul: <Calcul />, pace: <Pace />, spv: <Ozn />,
 };
 const INTRO_WORK = new Set(["viataDorita", "ceCauti", "rolFirma"]);
-/** Paginile de introducere a datelor: centrate, minimaliste, cu litere mari. */
-const FORM = new Set(["cai", "punte", "spv3", "productivi", "productivi3", "productivi2", "exitLinie", "exitUnde", "qSperanta", "qRetragere", "qAni", "venituri", "buget", "buget1", "buget2", "oneoff", "fonduri", "urma", "freedom", "freedom2", "spv2", "firma", "exitQ", "multiplu", "multipluDate", "multipluNote", "multipluCalc", "cale", "firmaCale", "ritm1", "ritmA", "ritmB", "ritmC", "ritm3", "exitNext", "dest", "plan", "tIntro", "tT", "tE", "tR", "tM", "tS"]);
 
 let chapter = "deschidere";
 const pageSteps: Step[] = PAGES.map((p) => {
@@ -59,7 +57,7 @@ const pageSteps: Step[] = PAGES.map((p) => {
     title: p.t,
     kind: (WORK.has(p.id) ? "work" : "slide") as Step["kind"],
     page: p.id,
-    slide: p.id === "contract" ? <ContractStep /> : (INTRO[p.id] ?? <FreedomPage id={p.id} intro={INTRO_WORK.has(p.id)} form={FORM.has(p.id)} />),
+    slide: p.id === "contract" ? <ContractStep /> : (INTRO[p.id] ?? <FreedomPage id={p.id} intro={INTRO_WORK.has(p.id)} form={!INTRO_WORK.has(p.id)} />),
   };
 });
 

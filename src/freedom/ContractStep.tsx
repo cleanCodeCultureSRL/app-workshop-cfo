@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { SignedAct } from "../../shared/types";
-import { fingerprint, renderContract } from "./engine";
+import { fingerprint, printDoc, renderContract } from "./engine";
 import { FN_FIELD, parseState, participantState } from "./state";
 import { FreedomPage } from "./FreedomPage";
 import { useSlide } from "../slides/SlideContext";
@@ -79,11 +79,14 @@ export function ContractStep() {
             <div className="page">
               <div className="eyebrow">Contractul cu firma · versiunea {shown.version}</div>
               <h1 className="q">Semnat la {fmtDate(shown.at)}</h1>
-              <div className="ctwrap">
-                <div className="ctdoc" id="ctDoc" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="opwrap">
+                <div id="ctDoc" dangerouslySetInnerHTML={{ __html: html }} />
               </div>
               <div className="eqrow noprint">
-                <button type="button" className="chip" onClick={() => window.print()}>
+                <button type="button" className="chip" onClick={() => {
+                    const el = document.getElementById("ctDoc");
+                    if (el) printDoc(el, "0");
+                  }}>
                   Printează
                 </button>
               </div>
@@ -94,5 +97,5 @@ export function ContractStep() {
       </section>
     );
   }
-  return <FreedomPage id="contract" after={bar} />;
+  return <FreedomPage id="contract" form after={bar} />;
 }

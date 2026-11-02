@@ -9,8 +9,8 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @theme {
-  --font-sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Inter Tight", "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Manrope", "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --color-navy: #000942;
   --color-navy-dark: #0b1122;
@@ -181,3 +181,20 @@
   body, .participant, .deck { background: #fff !important; }
   .slide { padding: 0 !important; min-height: 0 !important; }
 }
+
+/* toate slide-urile sunt centrate */
+.slide.cover .cover-shade { background: rgba(0, 9, 66, 0.72); }
+.slide.cover.intro .cover-shade { background: rgba(0, 9, 66, 0.86); }
+.slide.cover.ozn .cover-shade { background: linear-gradient(180deg, rgba(0, 9, 66, 0) 45%, rgba(0, 9, 66, 0.7) 100%); }
+.slide.cover { justify-content: center; }
+.slide.cover .slide-in { align-items: center; justify-content: center; text-align: center; max-width: 1060px; margin-inline: auto; }
+.slide.cover .cover-in { max-width: 900px; margin-inline: auto; }
+.slide.cover .lead, .slide.cover.intro .lead { margin-inline: auto; }
+.slide.cover .cover-card, .slide.cover .intro-cards, .slide.cover .intro-chain { width: 100%; }
+.slide.cover .cover-card { text-align: center; }
+.slide.cover .intro-chain .cover-card { justify-content: center; }
+.slide.cover .intro-who { justify-content: center; text-align: left; }
+.slide.cover .intro-list { justify-content: center; width: max-content; max-width: 100%; margin-inline: auto; text-align: left; }
+.fn.fn-dark .eyebrow, .fn.fn-dark .q, .fn.fn-dark .note, .fn.fn-dark .dqq { text-align: center; margin-inline: auto; }
+.slide.cover .cover-card .stat-l { font-size: 15px; }
+.slide.cover .cover-card .cover-facts .stat-l { font-size: 14px; }

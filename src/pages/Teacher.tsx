@@ -8,7 +8,7 @@ import { connect, disconnect, presenterSet, send } from "../lib/ws";
 import { cx } from "../lib/util";
 import { SlideContext } from "../slides/SlideContext";
 import PresentationNav from "../slides/PresentationNav";
-import { resetDemo } from "../freedom/state";
+import { loadExample, resetDemo } from "../freedom/state";
 
 const BAR_HIDE_MS = 3000;
 
@@ -179,12 +179,21 @@ export function Teacher() {
           </a>
           <button
             className="btn btn-ghost"
-            title="Firma-exemplu de pe proiector revine la cifrele inițiale (participanții nu sunt atinși)"
+            title="Încarcă exemplul complet, pentru repetiții (participanții nu sunt atinși)"
             onClick={() => {
-              if (confirm("Reîncarci firma-exemplu de pe proiector cu cifrele inițiale?\n\nCifrele participanților nu sunt atinse.")) resetDemo();
+              if (confirm("Încarci exemplul complet?\n\nCifrele tale de pe proiector se înlocuiesc. Participanții nu sunt atinși.")) loadExample();
             }}
           >
             Exemplul
+          </button>
+          <button
+            className="btn btn-ghost"
+            title="Golește cifrele de pe proiector (participanții nu sunt atinși)"
+            onClick={() => {
+              if (confirm("Golești cifrele de pe proiector?\n\nParticipanții nu sunt atinși.")) resetDemo();
+            }}
+          >
+            Golește
           </button>
           <span className={cx("conn", conn)} />
           <button

@@ -3,7 +3,7 @@
 // Răspunsurile personale stau separat, doar în localStorage, și nu ajung nici la server, nici la prezentator.
 // Prezentator: firma-exemplu (fresh()), ținută în browserul proiectorului; se poate reseta oricând.
 import { useSyncExternalStore } from "react";
-import { fresh, mergePrivate, normalize, splitPrivate, type FnState } from "./engine";
+import { fresh, exemplu, mergePrivate, normalize, splitPrivate, type FnState } from "./engine";
 import { getState } from "../lib/store";
 import { setField } from "../lib/ws";
 
@@ -105,6 +105,12 @@ export function resetDemo() {
   try {
     localStorage.removeItem(DEMO_LS);
   } catch {}
+  bump();
+}
+
+/** Încarcă exemplul complet, doar pentru repetiții. */
+export function loadExample() {
+  persistDemo(exemplu());
   bump();
 }
 
