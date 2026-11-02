@@ -109,7 +109,7 @@ export function RoomPanel() {
                       <td className="num">{s ? fmt.shortEur(s.ca) : "—"}</td>
                       <td className="num">{s ? n(s.divNet, fmt.shortEur) : "—"}</td>
                       <td className="num">{s ? n(s.FN, fmt.shortEur) : "—"}</td>
-                      <td>{s?.cale ? `${s.cale} · ${CALE_NUME[s.cale - 1]}` : s ? <span className="muted">nealeasă</span> : "—"}</td>
+                      <td>{s?.cale ? CALE_NUME[s.cale - 1] : s ? <span className="muted">nealeasă</span> : "—"}</td>
                       <td className="num">{s ? n(s.caR, fmt.shortEur) : "—"}</td>
                       <td className="num" title="ritmul constant cerut de calea aleasă (sau calea 1), după anul 4">{s ? n(s.g, fmt.gfmt) : "—"}</td>
                       <td>{s && s.ritmAles != null ? RITM_NUME[s.ritmAles] : <span className="muted">—</span>}</td>

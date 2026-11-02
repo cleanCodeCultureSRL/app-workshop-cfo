@@ -81,14 +81,14 @@
     venituri: null, pierderi: [0, null], nivelPlan: 3, catsV2: true, setup: false, regim: 'profit',
     ca: 1600000, profitMod: 'suma', ebitdaMod: 'suma', profitPct: 0, ebitdaPct: 0, ebitdaK: 0, profitNet: 128000,
     ebitda: 160000, da: 10, crestere: 2, reinvest: 20, cota: 100,
-    taxProfit: 16, taxDiv: 16, cassRon: 9720, taxCastig: 16, datorie: 0, vzRitm0: 0, vzRitm: 25, vzRitm2: 10, vzSprinturi: 1, vzMarjaPlus: 0, pgMarja: 0, pgVarsta: 0, pgNivel: 0, pgMultiplu: 0, gol1: true, ooEx2: true, ebK: true, pfVanzare: false, ctxPriv: true,
+    taxProfit: 16, taxDiv: 16, cassRon: 9720, taxCastig: 16, datorie: 0, vzRitm0: 0, vzRitm: 25, vzRitm2: 10, vzSprinturi: 1, vzMarjaPlus: 0, pgMarja: 0, pgVarsta: 0, pgNivel: 0, pgMultiplu: 0, gol1: true, ooEx2: true, ebK: true, ctxPriv: true,
     mTab: 'azi', alegere: null, valMetoda: 'sde', industrie: 'productie',
     notesV2: true, manualV1: true,
     nV: [1, 1, 1, 1, 1, 1], nVT: [1, 1, 1, 1, 1, 1], notesV3: true, vManual: true, vManAzi: 0.5, vManT: 0.7, sManual: true, sManAzi: 2.2, sManT: 2.8,
     nS: [2, 2, 3, 3, 3, 2, 3, 3, 2, 2, 3], nST: [4, 4, 4, 4, 4, 4, 3, 4, 3, 3, 4],
     sdeSalariu: 60000, sdeChelt: 10000, sdeSalPiata: 50000, sdePodea: 100000, cursUsd: 4.5, factorPiata: 0.85,
     finAport: 30, finDobBanca: 9, finAniBanca: 5, finCreditV: 0, finDobV: 6, finAniV: 3, finRand: 20, finDscr: 1.25,
-    cotaPastrata: 70, puncteCrestere: 40, legacy: 100000, costCeo: 70000, crestere2: 2,
+    cotaPastrata: 70, puncteCrestere: 40, legacy: 100000, ramane: 0, costCeo: 70000, crestere2: 2,
     caTrecut: 1200000, ritmAles: null, an1Ok: null, an1Target: 0, sezModel: 'none', sez: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], startLuna: 0, dInit: false, dS0: 0, dM0: 0, dX0: 0, dPT: 0, dST: 0, dMT: 0, dXT: 0, bud: [],
     terms: { hook: '', T: { hk: '', now: 50, end: 30, zile: 4, conc: 4, neg: '' }, E: { hk: '', azi: 6, tinta: 9, a: [{ n: '', h: 0 }, { n: '', h: 0 }, { n: '', h: 0 }], keep: '', no: '', opresc: '' }, R: { hk: '', loc: '', oras: '', echipa: 0, constr: '' }, M: { hk: '' }, S: { hk: '', dispus: '', y1: '', y2: '', y3: '' } },
     stAzi: null, stTinta: null, stPlan: ['', '', '', '', '', ''], exitFacute: [], exitDorit: null, rol: { fraza: '', c: ['', '', ''] }, initiative: ['', '', ''], ctNume: '', ctFirma: '', ctLoc: '', deCe: { a: '', b: '', c: '', w: [''] }
@@ -120,7 +120,7 @@
     sdeSalariu: [5000, 0, 1e8], sdeChelt: [1000, 0, 1e8], sdeSalPiata: [5000, 0, 1e8], sdePodea: [10000, 0, 1e9], cursUsd: [0.05, 1, 10], factorPiata: [0.05, 0.5, 1.2],
     finAport: [5, 0, 100], finDobBanca: [0.5, 0, 40], finAniBanca: [1, 1, 30], finCreditV: [5, 0, 100], finDobV: [0.5, 0, 40], finAniV: [1, 1, 30], finRand: [1, 0, 100], finDscr: [0.05, 1, 3],
     vManAzi: [0.05, 0, 20], vManT: [0.05, 0, 20], sManAzi: [0.05, 0, 20], sManT: [0.05, 0, 20],
-    cotaPastrata: [1, 1, 100], legacy: [10000, 0, 1e9], puncteCrestere: [1, 0, 100], costCeo: [5000, 0, 1e7], crestere2: [0.5, -20, 50], caTrecut: [50000, 0, 1e10], an1Target: [50000, 0, 1e11], dS0: [50000, 0, 1e11], dM0: [0.5, -50, 100], dX0: [0.1, 0, 50], dPT: [10000, -1e10, 1e10], dST: [50000, 0, 1e11], dMT: [0.5, 0.5, 100], dXT: [0.1, 0, 50]
+    cotaPastrata: [1, 1, 100], legacy: [10000, 0, 1e9], ramane: [5, 0, 100], puncteCrestere: [1, 0, 100], costCeo: [5000, 0, 1e7], crestere2: [0.5, -20, 50], caTrecut: [50000, 0, 1e10], an1Target: [50000, 0, 1e11], dS0: [50000, 0, 1e11], dM0: [0.5, -50, 100], dX0: [0.1, 0, 50], dPT: [10000, -1e10, 1e10], dST: [50000, 0, 1e11], dMT: [0.5, 0.5, 100], dXT: [0.1, 0, 50]
   };
   var PCT_KEYS = { vzRitm0: 1, profitPct: 1, ebitdaPct: 1, ebitdaK: 1, vzRitm: 1, vzRitm2: 1, vzMarjaPlus: 1, pgMultiplu: 1, dM0: 1, dMT: 1, dX0: 1, dXT: 1, sManAzi: 1, sManT: 1, vManAzi: 1, vManT: 1, cursUsd: 1, factorPiata: 1, finAport: 1, finDobBanca: 1, finCreditV: 1, finDobV: 1, finRand: 1, finDscr: 1, randament: 1, taxRand: 1, randFond: 1, inflatie: 1, da: 1, crestere: 1, reinvest: 1, cota: 1, taxProfit: 1, taxDiv: 1, taxCastig: 1, cotaPastrata: 1, puncteCrestere: 1, crestere2: 1, curs: 1 };
   var state = null, onSave = null;
@@ -136,7 +136,7 @@
   /* anul curent și anul următor; o coloană goală repetă anul anterior, iar după anul următor rămâne ultima coloană */
   function venAt(v, i) { for (var k = Math.min(i, 4); k >= 0; k--) if (v[k] != null) return +v[k] || 0; return 0; }
   /* tot ce introduce omul pornește gol; rămân doar cotele legale și parametrii de piață */
-  var GOL = { speranta: 0, retragere: 0, aniRamasi: 0, randament: 0, inflatie: 0, randFond: 0, urgLuni: 0, reloc1: 0, reloc2: 0, sanatate1: 0, sanatate2: 0, nivelPlan: 0, ca: 0, profitNet: 0, ebitda: 0, profitPct: 0, ebitdaPct: 0, ebitdaK: 0, reinvest: 0, cota: 0, datorie: 0, crestere: 0, vzRitm0: 0, vzRitm: 0, vzRitm2: 0, vzSprinturi: 0, vzMarjaPlus: 0, vManAzi: 0, vManT: 0, sManAzi: 0, sManT: 0, sdeSalariu: 0, sdeChelt: 0, sdeSalPiata: 0, sdePodea: 0, cotaPastrata: 0, puncteCrestere: 0, legacy: 0, costCeo: 0, crestere2: 0, caTrecut: 0, pgMarja: 0, pgVarsta: 0, pgNivel: 0, pgMultiplu: 0 };
+  var GOL = { speranta: 0, retragere: 0, aniRamasi: 0, randament: 0, inflatie: 0, randFond: 0, urgLuni: 0, reloc1: 0, reloc2: 0, sanatate1: 0, sanatate2: 0, nivelPlan: 0, ca: 0, profitNet: 0, ebitda: 0, profitPct: 0, ebitdaPct: 0, ebitdaK: 0, reinvest: 0, cota: 0, datorie: 0, crestere: 0, vzRitm0: 0, vzRitm: 0, vzRitm2: 0, vzSprinturi: 0, vzMarjaPlus: 0, vManAzi: 0, vManT: 0, sManAzi: 0, sManT: 0, sdeSalariu: 0, sdeChelt: 0, sdeSalPiata: 0, sdePodea: 0, cotaPastrata: 0, puncteCrestere: 0, legacy: 0, ramane: 0, costCeo: 0, crestere2: 0, caTrecut: 0, pgMarja: 0, pgVarsta: 0, pgNivel: 0, pgMultiplu: 0 };
   function fresh() {
     var s = exemplu();
     Object.keys(GOL).forEach(function (k) { s[k] = GOL[k]; });
@@ -157,7 +157,7 @@
   }
   /** Starea unui participant, cum vine de pe server sau din browser: completată cu ce lipsește și migrată de la forme mai vechi. */
   function normalize(raw) {
-    try { if (raw && typeof raw === 'object') { var s = raw, f = fresh(); if (!s.gol1) return f; if (!s.ebK) { if (!s.ebitda) s.ebitdaMod = 'factor'; s.ebK = true; } if (!s.ooEx2) { var oo0 = s.oneoff || [], idm = oo0.reduce(function (m, o) { return Math.max(m, o.id); }, 0); s.oneoff = f.oneoff.map(function (o) { o.id += idm; return o; }).concat(oo0); s.ooEx2 = true; } if (s.valMetoda === 'ebitda') s.valMetoda = 'sde'; if (!s.cats) s.cats = buildCats(s.buget); delete s.buget; s.cats.forEach(function (g) { g.items.forEach(function (it) { if (it.v.length === 2) it.v = [it.v[0], it.v[0], it.v[1]]; }); }); if (s.oneoff) s.oneoff.forEach(function (o) { if (o.g == null) o.g = guessG(o.nume); }); if (!s.ecoV2) { if (s.economii === 100000) s.economii = null; s.ecoV2 = true; } if (!s.catsV2) { s.cats.forEach(function (g) { g.open = true; }); s.catsV2 = true; } if (s.venituri) s.venituri.forEach(function (r) { r.v = r.v.slice(0, 2); }); if (s.pierderi) s.pierderi = s.pierderi.slice(0, 2); if (!s.notesV2) { s.nE = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; s.nET = s.nE.slice(); s.notesV2 = true; } if (!s.manualV1) { s.mManual = s.vManual = s.sManual = true; s.manualV1 = true; } if (!s.notesV3) { s.nV = [1, 1, 1, 1, 1, 1]; s.nVT = s.nV.slice(); s.notesV3 = true; } if (s.mval && !s.nE) { s.nE = s.mval.map(function (v) { return Math.min(5, Math.floor(v / 2) + 1); }); s.nET = (s.mvalT || s.mval).map(function (v) { return Math.min(5, Math.floor(v / 2) + 1); }); } for (var k in f) if (!(k in s)) s[k] = f[k]; delete s.step; return s; } } catch (e) {}
+    try { if (raw && typeof raw === 'object') { var s = raw, f = fresh(); if (!s.gol1) return f; if (s.alegere === 1) { s.alegere = null; s.metoda = 'consum'; } if (!s.ebK) { if (!s.ebitda) s.ebitdaMod = 'factor'; s.ebK = true; } if (!s.ooEx2) { var oo0 = s.oneoff || [], idm = oo0.reduce(function (m, o) { return Math.max(m, o.id); }, 0); s.oneoff = f.oneoff.map(function (o) { o.id += idm; return o; }).concat(oo0); s.ooEx2 = true; } if (s.valMetoda === 'ebitda') s.valMetoda = 'sde'; if (!s.cats) s.cats = buildCats(s.buget); delete s.buget; s.cats.forEach(function (g) { g.items.forEach(function (it) { if (it.v.length === 2) it.v = [it.v[0], it.v[0], it.v[1]]; }); }); if (s.oneoff) s.oneoff.forEach(function (o) { if (o.g == null) o.g = guessG(o.nume); }); if (!s.ecoV2) { if (s.economii === 100000) s.economii = null; s.ecoV2 = true; } if (!s.catsV2) { s.cats.forEach(function (g) { g.open = true; }); s.catsV2 = true; } if (s.venituri) s.venituri.forEach(function (r) { r.v = r.v.slice(0, 2); }); if (s.pierderi) s.pierderi = s.pierderi.slice(0, 2); if (!s.notesV2) { s.nE = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; s.nET = s.nE.slice(); s.notesV2 = true; } if (!s.manualV1) { s.mManual = s.vManual = s.sManual = true; s.manualV1 = true; } if (!s.notesV3) { s.nV = [1, 1, 1, 1, 1, 1]; s.nVT = s.nV.slice(); s.notesV3 = true; } if (s.mval && !s.nE) { s.nE = s.mval.map(function (v) { return Math.min(5, Math.floor(v / 2) + 1); }); s.nET = (s.mvalT || s.mval).map(function (v) { return Math.min(5, Math.floor(v / 2) + 1); }); } for (var k in f) if (!(k in s)) s[k] = f[k]; delete s.step; return s; } } catch (e) {}
     return fresh();
   }
   function save() { if (onSave) onSave(state); }
@@ -218,7 +218,7 @@
       if (a < R) { OO1 += v; cnt1++; } else { OO2 += v; cnt2++; OO2pv += v / Math.pow(1 + rr, a - R); }
     });
     var urg1 = s.urgLuni * L1, urg2 = s.urgLuni * L2, F1 = urg1 + s.reloc1 + s.sanatate1, F2 = urg2 + s.reloc2 + s.sanatate2;
-    var intact = s.metoda === 'capital', minim = s.metoda === 'minim';
+    var minim = s.metoda === 'minim';
     var cassEur = s.cassRon / s.curs, td = s.taxDiv / 100, tp = s.taxProfit / 100, da = s.da / 100;
 
     var pn0 = s.profitNet, E0 = Math.max(0, s.ebitda), kE = pn0 > 0 && E0 > 0 ? E0 / pn0 : 1;
@@ -232,18 +232,21 @@
       if (0.10 * brut > cassEur) brut = (A + cassEur) / (1 - td);
       return brut / share * kE;
     }
-    /* Freedom number: valoarea la începutul capitolului următor a tot ce trebuie plătit, cu un venit anual D(k) care îl reduce */
-    function freedom(D, legacy) {
-      var lifePv = 0, last = 0, fy = F2 * rf, fyPv = 0;
+    /* Freedom number: valoarea la începutul capitolului următor a tot ce trebuie plătit, cu un venit anual D(k) care îl reduce;
+       parte = cât din această sumă rămâne la final, dar niciodată sub suma minimă lăsată în urmă */
+    function freedom(D, legacy, parte) {
+      var lifePv = 0, fy = F2 * rf, fyPv = 0, v = 1 / Math.pow(1 + rr, n2);
       /* cheltuielile ies din portofoliu la începutul anului; randamentul fondurilor intră la final de an */
-      for (var k = 1; k <= n2; k++) { var need = Math.max(0, L2 * 12 - altCont - (D ? D(k) : 0)); lifePv += need / Math.pow(1 + rr, k - 1); fyPv += fy / Math.pow(1 + rr, k); last = need; }
-      var term = 0;
-      if (intact) { if (rr <= 0) return { ok: false }; term = (last * (1 + rr) - fy) / rr / Math.pow(1 + rr, n2); }
-      var lg = legacy > 0 ? legacy / Math.pow(1 + rr, n2) : 0, total = lifePv + term + OO2pv + F2 + lg - fyPv;
+      for (var k = 1; k <= n2; k++) { var need = Math.max(0, L2 * 12 - altCont - (D ? D(k) : 0)); lifePv += need / Math.pow(1 + rr, k - 1); fyPv += fy / Math.pow(1 + rr, k); }
+      var baza = lifePv + OO2pv + F2 - fyPv, xe = parte || 0;
+      /* cu randament real zero sau negativ, portofoliul nu se poate păstra întreg */
+      if (rr <= 0) xe = Math.min(xe, 0.9 * Math.pow(1 + rr, n2));
+      var cuMin = baza + (legacy > 0 ? legacy * v : 0), cuParte = xe > 0 ? baza / (1 - xe * v) : 0;
+      var total = Math.max(cuMin, cuParte), rest = cuParte > cuMin ? xe * cuParte : Math.max(0, legacy || 0);
       /* un singur Freedom number: tot ce trebuie să existe în prima zi a capitolului următor */
-      return { ok: true, life: lifePv, term: term, oo: OO2pv, fonduri: F2, fondRand: fy, fondPv: fyPv, legacy: lg, fn: total, total: total };
+      return { ok: true, life: lifePv, oo: OO2pv, fonduri: F2, fondRand: fy, fondPv: fyPv, legacy: rest * v, rest: rest, xe: xe, fn: total, total: total };
     }
-    var FN = freedom(null, minim ? s.legacy : 0);
+    var FN = freedom(null, minim ? s.legacy : 0, minim ? s.ramane / 100 : 0);
     var FNsimple = Math.max(0, L2 * 12 - altCont) * n2 + OO2 + F2 + (minim ? s.legacy : 0);
 
     var share1 = (1 - s.reinvest / 100) * (s.cota / 100);
@@ -350,7 +353,7 @@
     /* un scenariu: firma crește constant cu g pe an în anii productivi */
     function scenario(g, route, M, cap) {
       var X = mult(g, route, n1), ER = E0 * X * marjaF(route, n1), o = { g: g, X: X, ER: ER, CA: s.ca * X, route: route }, saleNet = 0, bDiv = null, bEb = null;
-      if (route === 'sale' || (route === 'div' && s.pfVanzare)) {
+      if (route === 'sale') {
         var sv = valuation(ER, s.ca * X, M); o.V = sv; o.M = sv.mult; o.base = sv.base;
         o.EV = sv.EV; o.equity = sv.equity; o.ours = sv.ours; o.saleTax = o.ours * s.taxCastig / 100; o.saleNet = o.ours - o.saleTax; saleNet = o.saleNet;
       }
@@ -363,8 +366,7 @@
       o.sim = simulate(g, route, saleNet, bDiv, bEb, cap);
       /* ținta căii: vânzarea și capitalul strâns, dividendul din board sau capitalul strâns */
       if (route === 'sale') o.gap = FN.ok ? FN.total - saleNet - o.sim.capRet : NaN;
-      else if (route === 'board') { o.nevoie = Math.max(0, L2 * 12 - altCont); o.gap = o.nevoie - o.d1.net; }
-      else o.gap = o.FNr.ok ? o.FNr.total - o.sim.capTrans : NaN; /* calea 1: capitalul strâns, plus vânzarea dacă portofoliul se construiește și din ea */
+      else { o.nevoie = Math.max(0, L2 * 12 - altCont); o.gap = o.nevoie - o.d1.net; }
       o.atinsAn = null; o.sim.rows.forEach(function (r, i) { if (o.atinsAn === null && r.ch === 1 && -r.life >= L1b * 12 - 1) o.atinsAn = i; });
       o.divLast = n1 > 0 ? divNet(E0 * mult(g, route, n1 - 1) * marjaF(route, n1 - 1), share1).net : 0;
       o.curve = []; for (var ci = 0; ci <= n1; ci++) o.curve.push(mult(g, route, ci));
@@ -408,10 +410,10 @@
       })(),
       L1b: L1b, life1Tot: life1Tot, plan: plan, lifeNow: L1use * 12, L1in: L1, capAn: capAn, capFirma: capFirma, venDecl: venDecl,
       R: R, varsta: varsta, E: E, n1: n1, n2: n2, rr: rr, L1: L1, L2: L2, OO1: OO1, OO2: OO2, OO2pv: OO2pv, cnt1: cnt1, cnt2: cnt2, ooAt: ooAt,
-      urg1: urg1, urg2: urg2, F1: F1, F2: F2, FN: FN, FNsimple: FNsimple, intact: intact, minim: minim, rf: rf, tr: tr, eco: eco, ecoVen: ecoVen, ecoRand: ecoRand,
+      urg1: urg1, urg2: urg2, F1: F1, F2: F2, FN: FN, FNsimple: FNsimple, minim: minim, rf: rf, tr: tr, eco: eco, ecoVen: ecoVen, ecoRand: ecoRand,
       share1: share1, div0: divNet(E0, share1), E0: E0, curba: (function () { var o = []; for (var i = 0; i <= n1; i++) { var x = mult(s.vzRitm / 100, 'cale', i); o.push({ i: i, age: varsta + i, X: x, CA: s.ca * x, eb: E0 * x * marjaF('cale', i) }); } return o; })(), pn0: pn0, marja: s.ca > 0 ? pn0 / s.ca : NaN, kE: kE,
       keep: keep, M0: M0, MT: MT, V0: V0, VT0: VT0, ind: ind, meth: meth, valAzi: V0.ours,
-      w1: s.alegere === 1 ? drum('div') : null, w2: s.alegere === 2 ? drum('sale') : null, w3: s.alegere === 3 ? drum('board') : null
+      w2: s.alegere === 2 ? drum('sale') : null, w3: s.alegere === 3 ? drum('board') : null
     };
   }
 
@@ -710,8 +712,8 @@
         '<p class="note small">Până în anul ' + pl.T + ': surplusul de ' + eur(pl.S) + ' plătește ' + eur(pl.cover) + ' plăți unice și ' + eur(pl.Fin) + ' fonduri. Din anul ' + pl.T + ', plățile rămase se întind egal pe ' + ani(pl.m) + ', iar fondurile se termină în cel mult 4 ani de la atingerea nivelului dorit.' + (pl.Xo > 0.5 ? ' ' + eur(pl.Xo) + ' plăți neobligatorii neacoperite se amână.' : '') + '</p>');
     }
   };
-  /* cele 3 căi: [calea din VARIANTE, metoda de calcul, titlu, text] */
-  var URMA = [[2, 'minim', 'Vând firma', 'Nu rămân pe capul nimănui. Am banii pentru bătrânețe și las ceva simbolic.'], [3, 'consum', 'Trăiesc din firmă', 'Îmi păstrez stilul de viață, iar firma îmi dă banii pentru el.'], [1, 'capital', 'Las un portofoliu', 'Randamentul plătește nivelul de trai, iar capitalul rămâne celor care îl primesc.']];
+  /* cele 2 căi: [calea din VARIANTE, metoda de calcul, titlu, text] */
+  var URMA = [[2, 'minim', 'Vând firma', 'Nu rămân pe capul nimănui. Trăiesc din banii încasați și decid cât din portofoliu rămâne la final.'], [3, 'consum', 'Trăiesc din firmă', 'Îmi păstrez stilul de viață, iar firma îmi dă banii pentru el. Ce strâng peste nevoi rămâne portofoliu.']];
   function setCale(v) { state.alegere = v; URMA.forEach(function (x) { if (x[0] === v) state.metoda = x[1]; }); }
   R.urma = {
     html: function () {
@@ -734,22 +736,21 @@
     o += st('3. Nivelul de trai, cu randament', '<p>Cheltuiala anului k iese la începutul anului, deci banii stau investiți k − 1 ani și costă azi A / (1 + r)<sup>k − 1</sup>.</p><p>Suma pe ' + n + ' ani = A × (1 + r) × (1 − (1 + r)<sup>−n</sup>) / r = ' + eur(A) + ' × ' + nf2.format(fac) + ' = <b>' + eur(F.life) + '</b></p>');
     o += st('4. Plățile unice, cu randament', ages.length ? '<p>Plata de la vârsta v costă azi S / (1 + r)<sup>v − ' + c.R + '</sup>.</p>' + ages.map(function (a) { var k = a - c.R; return '<p>La ' + ani(a) + ': ' + eur(c.ooAt[a]) + ' / (1 + r)<sup>' + k + '</sup> = ' + eur(c.ooAt[a] / Math.pow(1 + r, k)) + '</p>'; }).join('') + '<p>Total = <b>' + eur(F.oo) + '</b></p>' : '<p>Nu ai plăți unice în capitolul următor.</p>');
     o += st('5. Fondurile de urgență', '<p>Rămân întregi: <b>' + eur(F.fonduri) + '</b></p><p>Produc ' + nf2.format(state.randFond) + '% pe an, după impozit ' + pc(c.rf) + ', adică ' + eur(F.fondRand) + ' la final de an. Pe ' + n + ' ani, azi valorează <b>' + eur(F.fondPv) + '</b> și se scad.</p>');
-    if (F.term > 0) o += st('Capitalul lăsat întreg', '<p>Suma care rămâne neatinsă: (A × (1 + r) − ' + eur(F.fondRand) + ') / r, adusă la azi = <b>' + eur(F.term) + '</b></p>');
-    if (F.legacy > 0) o += st('Suma lăsată în urmă', '<p>' + eur(state.legacy) + ' / (1 + r)<sup>' + n + '</sup> = <b>' + eur(F.legacy) + '</b></p>');
-    o += st('6. FREEDOM NUMBER', '<p>' + eur(F.life) + ' + ' + eur(F.oo) + ' + ' + eur(F.fonduri) + (F.term > 0 ? ' + ' + eur(F.term) : '') + (F.legacy > 0 ? ' + ' + eur(F.legacy) : '') + ' − ' + eur(F.fondPv) + ' = <b>' + eur(F.total) + '</b></p>');
+    if (F.rest > 0) o += st('Ce rămâne la final', '<p>' + eur(F.rest) + ' / (1 + r)<sup>' + n + '</sup> = <b>' + eur(F.legacy) + '</b></p>');
+    o += st('6. FREEDOM NUMBER', '<p>' + eur(F.life) + ' + ' + eur(F.oo) + ' + ' + eur(F.fonduri) + (F.legacy > 0 ? ' + ' + eur(F.legacy) : '') + ' − ' + eur(F.fondPv) + ' = <b>' + eur(F.total) + '</b></p>');
     var bal = F.total - F.fonduri, rows = '';
     for (var k = 1; k <= n; k++) {
       var oo = c.ooAt[c.R + k - 1] || 0, rest = bal - A - oo, y = rest * r + F.fondRand, end = rest + y;
       rows += '<tr><td>' + (c.R + k - 1) + '</td><td>' + eur(bal) + '</td><td>' + eur(A) + '</td><td>' + eur(oo) + '</td><td>' + eur(y) + '</td><td>' + eur(Math.abs(end) < 0.5 ? 0 : end) + '</td></tr>';
       bal = end;
     }
-    o += st('7. Verificarea, an cu an', '<p>Pornim cu suma de la pasul 6, fără fonduri. La final, soldul ajunge la ' + (c.intact ? 'capitalul lăsat întreg' : c.minim ? 'suma lăsată în urmă' : 'zero') + '.</p><div class="tbl-wrap"><table class="qt"><thead><tr><th>Vârsta</th><th>Sold la început</th><th>Nivel de trai</th><th>Plăți unice</th><th>Randament</th><th>Sold la final</th></tr></thead><tbody>' + rows + '</tbody></table></div>');
+    o += st('7. Verificarea, an cu an', '<p>Pornim cu suma de la pasul 6, fără fonduri. La final, soldul ajunge la ' + (F.rest > 0 ? 'suma care rămâne' : 'zero') + '.</p><div class="tbl-wrap"><table class="qt"><thead><tr><th>Vârsta</th><th>Sold la început</th><th>Nivel de trai</th><th>Plăți unice</th><th>Randament</th><th>Sold la final</th></tr></thead><tbody>' + rows + '</tbody></table></div>');
     return o;
   }
   var FN1 = {
     html: function () {
       return '<div class="eyebrow">Freedom number</div><h1 class="q fn-cap">FREEDOM NUMBER</h1>' +
-        (state.alegere === 2 ? '<div class="panel">' + fld('legacy', 'Suma pe care o las în urmă', '€', 'la finalul vieții, în banii de azi') + '</div>' : '') +
+        (state.alegere === 2 ? '<div class="panel">' + fld('legacy', 'Suma minimă pe care o las în urmă', '€', 'la finalul vieții, în banii de azi') + '</div>' : '') +
         '<div class="fnbox"><div class="lbl" data-o="lbl"></div><div class="big" data-o="fn0"></div><div class="row" data-o="short0"></div></div>' +
         '<p class="note">Dar știm că valoarea în timp a banilor scade, deci aceasta nu este o imagine corectă.</p>' +
         '<div class="eqrow"><button type="button" class="det-btn" id="fnGood" data-go="freedom2"></button></div>';
@@ -771,12 +772,14 @@
     },
     update: function (p, c) { if (state.alegere !== 3) FN1.update(p, c); }
   };
+  function xNota(c) { return c.FN.xe < state.ramane / 100 - 1e-9 ? 'Cu randamentul real de ' + nf2.format(c.rr * 100) + '%, pot rămâne cel mult ' + nf0.format(c.FN.xe * 100) + '% din portofoliu.' : ''; }
   var FN2 = {
     html: function () {
       return '<div class="eyebrow">Freedom number</div><h1 class="q fn-cap">FREEDOM NUMBER</h1>' +
         '<p class="note">Vezi cât trebuie să fie FREEDOM cu banii puși la treabă, conform alegerilor din pașii anteriori.</p>' +
         '<div class="fnbox prod"><div class="lbl" data-o="lbl2"></div><div class="big" data-o="fn"></div><div class="row" data-o="short"></div></div>' +
         '<details class="panel"><summary>Demonstrația matematică</summary><div class="proof" data-o="proof"></div></details>' +
+        '<div class="panel">' + fld('ramane', 'Cât din portofoliu rămâne la final', '%', '0%: îl consumi până la suma minimă. 100%: rămâne întreg.') + '<p class="note small" data-o="xnote"></p></div>' +
         '<div class="stack"><div class="panel"><h2 class="sec">Randamentul</h2>' + fld('randament', 'Randamentul anual al investițiilor', '%') + fld('taxRand', 'Impozitul pe randament', '%') + fld('inflatie', 'Inflația anuală', '%') + fld('randFond', 'Randamentul fondurilor de urgență', '%') +
         '<div class="frow"><span>Randamentul net<small style="display:block;color:var(--muted);font-size:.78rem">după toate taxele și impozitele</small></span><b data-o="rnet"></b><span class="u"></span></div>' +
         '<div class="frow"><span>Randamentul real net<small style="display:block;color:var(--muted);font-size:.78rem">(1 + randament net) / (1 + inflație) − 1</small></span><b data-o="rr"></b><span class="u"></span></div></div>' +
@@ -784,11 +787,11 @@
     },
     update: function (p, c) {
       var bun = c.FN.ok && c.FN.total <= c.FNsimple;
-      out(p, 'lbl2', bun ? 'Cu banii la treabă' : 'Cu capitalul lăsat întreg');
+      out(p, 'lbl2', bun ? 'Cu banii la treabă' : 'Cu o parte din portofoliu păstrată');
       out(p, 'rnet', nf2.format(c.ecoRand * 100) + '%'); out(p, 'rr', nf2.format(c.rr * 100) + '%');
-      if (!c.FN.ok) { out(p, 'fn', '-'); out(p, 'short', '<div>Cu capitalul întreg, randamentul real trebuie să fie pozitiv.</div>'); out(p, 'proof', ''); return; }
       out(p, 'fn', shortEur(c.FN.total));
-      out(p, 'short', '<div><b>' + shortEur(Math.abs(c.FNsimple - c.FN.total)) + '</b>' + (bun ? 'muncesc banii pentru tine' : 'în plus, ca să rămână capitalul') + '</div><div><b>' + nf2.format(c.rr * 100) + '%</b>randament real net</div>' + (c.intact ? '<div><b>întreg</b>capitalul rămâne</div>' : ''));
+      out(p, 'short', '<div><b>' + shortEur(Math.abs(c.FNsimple - c.FN.total)) + '</b>' + (bun ? 'muncesc banii pentru tine' : 'în plus, ca să rămână portofoliul') + '</div><div><b>' + nf2.format(c.rr * 100) + '%</b>randament real net</div>' + (c.FN.rest > 0 ? '<div><b>' + shortEur(c.FN.rest) + '</b>rămân la final</div>' : ''));
+      out(p, 'xnote', xNota(c));
       out(p, 'proof', fnProof(c));
     }
   };
@@ -921,10 +924,10 @@
       });
     },
     update: function (p, c) {
-      var m = state.valMetoda || 'sde', man = m === 'venit' ? state.vManual : state.sManual, fl = man ? [] : factorList(m), atSale = state.mTab === 'tinta' && m === 'sde' && (c.w2 || c.w1) && (c.w2 || c.w1).V, V = atSale ? (c.w2 || c.w1).V : state.mTab === 'tinta' ? c.VT0 : c.V0, when = atSale ? 'la vânzare' : 'azi';
+      var m = state.valMetoda || 'sde', man = m === 'venit' ? state.vManual : state.sManual, fl = man ? [] : factorList(m), atSale = state.mTab === 'tinta' && m === 'sde' && c.w2 && c.w2.V, V = atSale ? c.w2.V : state.mTab === 'tinta' ? c.VT0 : c.V0, when = atSale ? 'la vânzare' : 'azi';
       var av = state.avere; out(p, 'pcAv', av && av.pct > 0 ? '<p class="lead-to">Pe slide-ul 31 ai estimat că ' + nf0.format(av.pct) + '% din avere stă în firmă.</p>' : '');
       p.querySelectorAll('#vMeth button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-vm') === m)); });
-      var wv = c.w2 || c.w1, mtUsed = wv && wv.M != null ? wv.M : c.MT;
+      var wv = c.w2, mtUsed = wv && wv.M != null ? wv.M : c.MT;
       out(p, 'M0', nf2.format(c.M0) + '×'); out(p, 'MT', nf2.format(mtUsed) + '×');
       p.querySelectorAll('#mTab button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-mt') === state.mTab)); });
       if (m !== 'sde') {
@@ -975,16 +978,6 @@
       '<div class="flow" style="--pc:' + o.col + '">' + flow + '</div>' +
       '<p class="ikey">' + o.key + '</p>';
   }
-  R.cai1 = {
-    html: function () {
-      return infoSlide({ col: 'var(--accent)', title: 'Las un portofoliu', tag: '„Faci plinul din mers”. Firma îți plătește dividende, iar tu construiești capitalul în afara ei.',
-        flow: [['Crești firma', 'până acoperă nivelul dorit'], ['Îți plătești nivelul de trai', 'din dividende'], ['Investești restul', 'banii lucrează pentru tine'], ['Freedom number', 'la ' + ani(C.R), true]],
-        key: 'Capitalul rămâne întreg, iar randamentul plătește nivelul de trai.' }) +
-        '<h2 class="sec">Din ce construiești portofoliul?</h2><div class="urmo" id="pfo"><button type="button" data-pf="0"><b>Doar din economii</b><span>Strângi tot din ce îți rămâne până la retragere.</span></button><button type="button" data-pf="1"><b>Economii și vânzarea firmei</b><span>Banii din vânzare intră în portofoliu.</span></button></div>';
-    },
-    bind: function (p) { p.querySelector('#pfo').addEventListener('click', function (e) { var b = e.target.closest('[data-pf]'); if (!b) return; state.pfVanzare = b.getAttribute('data-pf') === '1'; changed(); }); },
-    update: function (p) { p.querySelectorAll('#pfo button').forEach(function (b) { b.setAttribute('aria-pressed', String((b.getAttribute('data-pf') === '1') === !!state.pfVanzare)); }); }
-  };
   R.cai2 = {
     html: function () {
       return infoSlide({ col: 'var(--teal)', title: 'Vând firma', tag: '„Îmbraci mireasa”. Construiești o firmă pe care cineva vrea să o cumpere.',
@@ -1089,27 +1082,24 @@
   function caleVerd(w, unit) {
     return w.gap > 0.5 ? '<p class="verdict no">Lipsesc ' + eur(w.gap) + unit + '.<small>Le închidem cu pârghiile de pe slide-ul următor.</small></p>' : '<p class="verdict ok">Ajungi la țintă.<small>Îți rămân ' + eur(-w.gap) + unit + ' peste ea.</small></p>';
   }
+  /* ce portofoliu lași: rezultatul calculului, nu o cale separată */
+  function caleRest(w, c, bani) {
+    if (w.sim.runOut) return '<p class="note">Banii se termină la ' + ani(w.sim.runOut) + '.</p>';
+    var e = Math.max(0, w.sim.end);
+    return '<div class="jstats">' + caleSt('Portofoliul lăsat la final', shortEur(e), 'la ' + ani(c.E) + ', în banii de azi, plus fondurile') + (bani > 0 ? caleSt('Din banii de la retragere', pct(e / bani), '') : '') + '</div>' + (c.minim ? '<p class="note small">' + xNota(c) + '</p>' : '');
+  }
   function caleHtml(eye, q, mid) {
     return '<div class="eyebrow" style="color:var(--teal)">' + eye + '</div><h1 class="q">' + q + '</h1>' + (mid || '') +
       '<div data-o="firma"></div><div class="eqrow bridge" data-o="suma"></div><div data-o="verd"></div><details class="panel sect"><summary>Demonstrația: desfășurătorul an cu an</summary><div data-o="tb"></div></details><div class="eqrow"><button type="button" class="det-btn" id="caleNext" data-go="parghii">Continuă</button></div>';
   }
   function caleFirma(w, c) { return caleSt('Cifra de afaceri la ' + ani(c.R), shortEur(w.CA), 'azi ' + shortEur(state.ca) + ', de ' + nf2.format(w.X) + ' ori') + caleSt('EBITDA la ' + ani(c.R), shortEur(w.ER), 'azi ' + shortEur(c.E0)); }
-  R.cale1 = {
-    html: function () { return caleHtml('Calea ta · Las un portofoliu', 'Ajunge ce strângi?'); },
-    update: function (p, c) {
-      var w = c.w1; if (!w) return;
-      out(p, 'firma', '<div class="jstats">' + caleFirma(w, c) + (state.pfVanzare ? caleSt(VM[c.meth].base + ' la vânzare', shortEur(w.base), 'multiplu ' + nf2.format(w.M) + '×') : '') + '</div>');
-      out(p, 'suma', (state.pfVanzare ? caleBf('Net din vânzare', shortEur(w.saleNet)) + caleOp('+') + caleBf('Capital strâns', shortEur(w.sim.capRet)) + caleOp('=') + caleBf('Portofoliu la ' + ani(c.R), shortEur(w.saleNet + w.sim.capRet), '', 'gd') : caleBf('Portofoliu la ' + ani(c.R), shortEur(w.sim.capRet), 'din economii', 'gd')) + caleOp('față de') + caleBf('Capitalul care nu se consumă', shortEur(c.FN.fn), 'randamentul plătește nivelul de trai', 'ac'));
-      out(p, 'verd', caleVerd(w, '')); caleNext(p, w); out(p, 'tb', sectTable(w, c, 'var(--accent)', 'Portofoliul tău'));
-    }
-  };
   R.cale2 = {
-    html: function () { return caleHtml('Calea ta · Vând firma', 'Ce îți aduce vânzarea?'); },
+    html: function () { return caleHtml('Calea ta · Vând firma', 'Ce îți aduce vânzarea?', '<div class="panel">' + fld('ramane', 'Cât din portofoliu rămâne la final', '%', '0%: îl consumi până la suma minimă. 100%: rămâne întreg.') + '</div>'); },
     update: function (p, c) {
       var w = c.w2; if (!w) return;
       out(p, 'firma', '<div class="jstats">' + caleFirma(w, c) + caleSt(VM[c.meth].base + ' la vânzare', shortEur(w.base), 'multiplu ' + nf2.format(w.M) + '×') + '</div>');
       out(p, 'suma', caleBf('Încasezi net din vânzare', shortEur(w.saleNet)) + caleOp('+') + caleBf('Capital strâns', shortEur(w.sim.capRet)) + caleOp('=') + caleBf('Ai la ' + ani(c.R), shortEur(w.saleNet + w.sim.capRet), '', 'gd') + caleOp('față de') + caleBf('Freedom number', shortEur(c.FN.fn), '', 'ac'));
-      out(p, 'verd', caleVerd(w, '')); caleNext(p, w); out(p, 'tb', sectTable(w, c, 'var(--teal)', 'Capitalul tău'));
+      out(p, 'verd', caleVerd(w, '') + caleRest(w, c, w.saleNet + w.sim.capRet)); caleNext(p, w); out(p, 'tb', sectTable(w, c, 'var(--teal)', 'Capitalul tău'));
     }
   };
   R.cale3 = {
@@ -1120,7 +1110,7 @@
       var w = c.w3; if (!w) return;
       out(p, 'firma', '<div class="jstats">' + caleFirma(w, c) + caleSt('EBITDA după CEO', shortEur(w.eb1), '') + '</div>');
       out(p, 'suma', caleBf('Dividendul din board', shortEur(w.d1.net), 'net, primul an', 'gd') + caleOp('față de') + caleBf('Nivelul dorit', shortEur(w.nevoie), 'pe an', 'ac'));
-      out(p, 'verd', caleVerd(w, ' pe an')); caleNext(p, w); out(p, 'tb', sectTable(w, c, 'var(--plum)', 'Capitalul tău'));
+      out(p, 'verd', caleVerd(w, ' pe an') + caleRest(w, c)); caleNext(p, w); out(p, 'tb', sectTable(w, c, 'var(--plum)', 'Capitalul tău'));
     }
   };
   /* curba firmei și ce strângi pe drum */
@@ -1141,23 +1131,23 @@
       return ritmEye(11) + '<h1 class="q">Ce strângi până la retragere?</h1><div data-o="st"></div><details class="panel sect" open><summary>An cu an</summary><div data-o="tab"></div></details><div class="eqrow"><button type="button" class="det-btn" data-go="cai">Continuă</button></div>';
     },
     update: function (p, c) {
-      var w = [c.w1, c.w2, c.w3][state.alegere - 1]; if (!w) { out(p, 'st', '<p class="note">Nu se poate calcula.</p>'); return; }
+      var w = wOf(c, state.alegere); if (!w) { out(p, 'st', '<p class="note">Nu se poate calcula.</p>'); return; }
       var rows = w.sim.rows.filter(function (r) { return r.ch === 1; });
       out(p, 'st', '<div class="jstats">' + caleSt('Capital strâns la ' + ani(c.R), shortEur(w.sim.capRet), 'economii, dividende rămase, fonduri') + caleSt('Nivelul dorit îl atingi', w.atinsAn === null ? 'nu încă' : 'în anul ' + w.atinsAn, 'până atunci rămâne blocat') + (w.sim.tot.def > 0.5 ? caleSt('Rămân neplătite', shortEur(w.sim.tot.def), 'plăți unice și fonduri') : '') + (w.sim.resR < c.F1 - 1 ? caleSt('Fonduri neconstruite', shortEur(c.F1 - w.sim.resR), 'din ' + shortEur(c.F1)) : '') + '</div>');
       out(p, 'tab', '<table class="qt"><thead><tr><th>Anul</th><th>Bani primiți</th><th>Nivel de trai</th><th>Plăți unice</th><th>Fonduri</th><th>Capital</th></tr></thead><tbody>' + rows.map(function (r, i) { return '<tr><td>' + i + '</td><td>' + eur(r.div) + '</td><td>' + eur(-r.life) + '</td><td>' + eur(-r.oo) + '</td><td>' + eur(-r.fond) + '</td><td>' + eur(r.end + r.res) + '</td></tr>'; }).join('') + '</tbody></table>');
     }
   };
   /* pârghiile nu ating cifrele de mai sus: fiecare se calculează pe o copie */
-  function gapDe(st) { var c = calc(st), w = [c.w1, c.w2, c.w3][st.alegere - 1]; return w ? w.gap : NaN; }
+  function gapDe(st) { var c = calc(st), w = wOf(c, st.alegere); return w ? w.gap : NaN; }
   R.parghii = {
     html: function () {
-      var w0 = [C.w1, C.w2, C.w3][state.alegere - 1];
+      var w0 = wOf(C, state.alegere);
       if (w0 && w0.gap <= 0.5) return '<div class="eyebrow">Calea ta · pârghiile</div><h1 class="q">Ai ajuns la țintă.</h1><p class="note">Nu ai nevoie de ajustări. Îți rămân ' + eur(-w0.gap) + (state.alegere === 3 ? ' pe an' : '') + ' peste ea.</p><div class="eqrow"><button type="button" class="det-btn" data-go="firmaCale">Continuă</button></div>';
       return '<div class="eyebrow">Calea ta · pârghiile</div><h1 class="q">Cum închizi diferența?</h1><div class="planrow">' + fld('pgMarja', 'Marja EBITDA, în plus', 'p.p.', '', true) + fld('pgVarsta', 'Te retragi mai târziu cu', 'ani', '', true) + fld('pgNivel', 'Nivelul dorit, mai mic cu', '%', '', true) + (vinde() ? fld('pgMultiplu', 'Multiplul, în plus', '×', '', true) : '') + '</div>' +
         '<div data-o="st"></div><div data-o="verd"></div><div class="eqrow"><button type="button" class="det-btn" data-go="firmaCale">Continuă</button></div>';
     },
     update: function (p, c) {
-      var w = [c.w1, c.w2, c.w3][state.alegere - 1]; if (!w || w.gap <= 0.5) return;
+      var w = wOf(c, state.alegere); if (!w || w.gap <= 0.5) return;
       var un = state.alegere === 3 ? ' pe an' : '', cl = function (f) { var o = JSON.parse(JSON.stringify(state)); f(o); return o; };
       var fM = function (o) { o.vzMarjaPlus += state.pgMarja; }, fV = function (o) { o.retragere += state.pgVarsta; o.aniRamasi += state.pgVarsta; }, fN = function (o) { o.cats.forEach(function (g) { g.items.forEach(function (it) { it.v[1] = (+it.v[1] || 0) * (1 - state.pgNivel / 100); }); }); };
       var mul = vinde() ? state.pgMultiplu * w.base * state.cota / 100 * (1 - state.taxCastig / 100) : 0;
@@ -1179,29 +1169,32 @@
       p.querySelector('#choose').addEventListener('click', function (e) { var b = e.target.closest('[data-pick]'); if (!b) return; setCale(+b.getAttribute('data-pick')); changed(); });
     },
     update: function (p, c) {
-      out(p, 'top', '<div class="fnbox"><div class="lbl">Freedom number la ' + c.R + ' de ani · ' + ani(c.n2) + ' de capitol următor</div><div class="big">' + (c.FN.ok ? shortEur(c.FN.fn) : '-') + '</div>' +
+      out(p, 'top', '<div class="fnbox"><div class="lbl">' + fnK() + ' la ' + c.R + ' de ani · ' + ani(c.n2) + ' de capitol următor</div><div class="big">' + fnV(c) + '</div>' +
         '<div class="row"><div><b>' + shortEur(state.ca) + '</b>cifra de afaceri azi</div><div><b>' + (isNaN(c.marja) ? '-' : pct(c.marja)) + '</b>marja de profit net</div><div><b>' + shortEur(c.div0.net) + '</b>dividend net azi</div></div></div>');
-      var W = [[1, 'var(--accent)', 'Las un portofoliu', c.w1, function (w) { return (w.saleNet ? [['Încasezi net din vânzare', shortEur(w.saleNet)]] : []).concat([['Capital strâns', shortEur(w.sim.capRet)], [w.gap > 0.5 ? 'Lipsesc' : 'Peste țintă', shortEur(Math.abs(w.gap))]]); }, 'cale'],
-               [2, 'var(--teal)', 'Vând firma', c.w2, function (w) { return [['Multiplul (' + VM[c.meth].u + ')', nf2.format(c.M0) + ' → ' + nf2.format(w.M)], ['Încasezi net din vânzare', shortEur(w.saleNet)], ['Economii și dividende rămase', shortEur(w.sim.capRet)], [w.gap > 0.5 ? 'Lipsesc' : 'Peste țintă', shortEur(Math.abs(w.gap))]]; }, 'cale'],
-               [3, 'var(--plum)', 'Trăiesc din firmă', c.w3, function (w) { return [['Cota păstrată', nf0.format(state.cotaPastrata) + '%'], ['Dividend net, primul an', shortEur(w.d1.net)], [w.gap > 0.5 ? 'Lipsesc pe an' : 'Peste țintă, pe an', shortEur(Math.abs(w.gap))]]; }, 'cale']];
+      var W = [[2, 'var(--teal)', 'Vând firma', c.w2, function (w) { return [['Multiplul (' + VM[c.meth].u + ')', nf2.format(c.M0) + ' → ' + nf2.format(w.M)], ['Încasezi net din vânzare', shortEur(w.saleNet)], ['Economii și dividende rămase', shortEur(w.sim.capRet)], [w.gap > 0.5 ? 'Lipsesc' : 'Peste țintă', shortEur(Math.abs(w.gap))], ['Portofoliul lăsat la final', shortEur(Math.max(0, w.sim.end))]]; }, 'cale'],
+               [3, 'var(--plum)', 'Trăiesc din firmă', c.w3, function (w) { return [['Cota păstrată', nf0.format(state.cotaPastrata) + '%'], ['Dividend net, primul an', shortEur(w.d1.net)], [w.gap > 0.5 ? 'Lipsesc pe an' : 'Peste țintă, pe an', shortEur(Math.abs(w.gap))], ['Portofoliul lăsat la final', shortEur(Math.max(0, w.sim.end))]]; }, 'cale']];
       out(p, 'alte', URMA.filter(function (x) { return x[0] !== state.alegere; }).map(function (x) { return '<button type="button" data-pick="' + x[0] + '"><b>' + x[2] + '</b><span>' + x[3] + '</span></button>'; }).join(''));
       out(p, 'cards', W.filter(function (x) { return state.alegere === x[0]; }).map(function (x) {
         var w = x[3], sel = true, ok = w && w.status !== 'imposibil';
-        return '<div class="route' + (sel ? ' sel' : '') + '" style="border-color:' + x[1] + '"><div class="rt" style="color:' + x[1] + '">Calea ' + x[0] + '</div><p class="rv">' + x[2] + '</p>' +
+        return '<div class="route' + (sel ? ' sel' : '') + '" style="border-color:' + x[1] + '"><div class="rt" style="color:' + x[1] + '">Calea aleasă</div><p class="rv">' + x[2] + '</p>' +
           (ok ? '<div class="cbig" style="color:' + x[1] + '">' + shortEur(w.CA) + '</div><p class="small" style="color:var(--muted)">' + 'cifra de afaceri la ' + c.R + ' de ani' + '</p>' +
             '<dl>' + dl((w.g != null ? [['În sprint', gfmt(w.g) + ' pe an'], ['După sprinturi', gfmt(state.vzRitm2 / 100) + ' pe an']] : w.p1 ? [['În ' + primiiAni(w.p1.yrs), gfmt(w.p1.g) + ' pe an → ' + shortEur(w.p1.CA)], ['Apoi, constant', gfmt(w.g) + ' pe an']] : [['Ritm constant de creștere', gfmt(w.g) + ' pe an']]).concat([ ['De câte ori crește firma', xfmt(w.X)], ['EBITDA la ' + c.R + ' de ani', shortEur(w.ER)]]).concat(x[4](w))) + '</dl>'
             : '<p class="small" style="color:var(--cabinet)">Pe această cale nu se ajunge la Freedom number.</p>') +
           '<div class="eqrow"><button type="button" class="link" data-go="' + x[5] + '">Vezi calculul</button></div></div>';
       }).join(''));
-      var pk = state.alegere ? W[state.alegere - 1] : null, pw = pk && pk[3];
+      var pk = W.filter(function (x) { return x[0] === state.alegere; })[0], pw = pk && pk[3];
       var sum = pw && eur((pw.saleNet || 0) + pw.sim.capRet);
       out(p, 'pick', pw ? '<p class="concl">La acest ritm, firma ajunge la <span class="a">' + shortEur(pw.CA) + '</span> cifră de afaceri până la ' + ani(c.R) + '. ' +
-        (state.alegere === 3 ? 'Dividendul din board ' : 'Cu ' + sum + ' strânși, ') + (pw.gap > 0.5 ? 'nu ajungi încă la țintă: lipsesc ' + eur(pw.gap) : 'ajungi la țintă și îți rămân ' + eur(-pw.gap) + ' peste ea') + (state.alegere === 3 ? ' pe an' : '') + '.</p>' : '');
+        (state.alegere === 3 ? 'Cu dividendul din board, ' : 'Cu ' + sum + ' strânși, ') + (pw.gap > 0.5 ? 'nu ajungi încă la țintă: lipsesc ' + eur(pw.gap) : 'ajungi la țintă și îți rămân ' + eur(-pw.gap) + ' peste ea') + (state.alegere === 3 ? ' pe an' : '') + '.</p>' : '');
     }
   };
 
   /* se calculează și se arată doar calea aleasă; altă cale se alege de pe Concluzii */
-  function vinde() { return state.alegere === 2 || (state.alegere === 1 && state.pfVanzare); }
+  function wOf(c, a) { return a === 2 ? c.w2 : a === 3 ? c.w3 : null; }
+  /* ținta depinde de cale: un capital la vânzare, un dividend anual dacă trăiești din firmă */
+  function fnK() { return state.alegere === 3 ? 'Dividendul necesar' : 'Freedom number'; }
+  function fnV(c) { return state.alegere === 3 ? shortEur(Math.max(0, c.L2 * 12 - c.altCont)) + ' / an' : shortEur(c.FN.fn); }
+  function vinde() { return state.alegere === 2; }
   function perCale(ids, none) {
     function rc() { return R[typeof ids === 'function' ? ids() : ids[state.alegere]]; }
     return {
@@ -1210,15 +1203,14 @@
       update: function (p, c) { var r = rc(); if (r) r.update(p, c); }
     };
   }
-  R.cai = perCale({ 1: 'cai1', 2: 'cai2', 3: 'cai3' }, 'Alege întâi ce vrei să rămână după tine.');
+  R.cai = perCale({ 2: 'cai2', 3: 'cai3' }, 'Alege întâi ce vrei să rămână după tine.');
   [['multiplu', 'multipluV'], ['multipluDate', 'multipluDateV'], ['multipluNote', 'multipluNoteV'], ['multipluCalc', 'multipluCalcV']].forEach(function (x) { R[x[0]] = perCale(function () { return vinde() ? x[1] : null; }, 'Pe calea ta nu ai nevoie de multiplu.'); });
-  R.cale = perCale({ 1: 'cale1', 2: 'cale2', 3: 'cale3' }, 'Alege întâi ce vrei să rămână după tine.');
+  R.cale = perCale({ 2: 'cale2', 3: 'cale3' }, 'Alege întâi ce vrei să rămână după tine.');
 
   /* firma de care are nevoie calea aleasă: [calea, tipul firmei, trăsături, cifra-cheie a căii] */
   var FIRME = [
     [2, 'Firmă vandabilă', ['Merge fără tine', 'Venit recurent', 'Clienți diversificați', 'Echipă de conducere'], function (w) { return ['Încasezi net din vânzare', shortEur(w.saleNet)]; }],
-    [3, 'Firmă care plătește dividend', ['Un CEO o conduce', 'Profit stabil', 'Cash încasat la timp', 'Tu rămâi în board'], function (w) { return ['Dividend net, primul an', shortEur(w.d1.net)]; }],
-    [1, 'Firmă care produce capital', ['Marjă mare', 'Puțin cash blocat', 'Profitul merge în portofoliu', 'Disciplină la dividend'], function (w, c) { return ['Portofoliu de strâns', c.FN.ok ? shortEur(c.FN.fn) : '-']; }]
+    [3, 'Firmă care plătește dividend', ['Un CEO o conduce', 'Profit stabil', 'Cash încasat la timp', 'Tu rămâi în board'], function (w) { return ['Dividend net, primul an', shortEur(w.d1.net)]; }]
   ];
   function stCA(v) { var T = [48000, 79000, 350000, 800000, 3000000], i = 0; while (i < 5 && v > T[i]) i++; return STADII[i]; }
   R.firmaCale = {
@@ -1231,7 +1223,7 @@
       p.querySelectorAll('#firmo button').forEach(function (b) { b.setAttribute('aria-pressed', String(+b.getAttribute('data-c') === state.alegere)); });
       var f = FIRME.filter(function (x) { return x[0] === state.alegere; })[0];
       if (!f) { out(p, 'f', '<p class="note">Alege ce vrei să rămână după tine.</p>'); return; }
-      var w = [c.w1, c.w2, c.w3][f[0] - 1], ok = w && w.status !== 'imposibil', a = stCA(state.ca), k = ok ? f[3](w, c) : null;
+      var w = wOf(c, f[0]), ok = w && w.status !== 'imposibil', a = stCA(state.ca), k = ok ? f[3](w, c) : null;
       var stat = function (t, v, n) { return '<div><div class="k">' + t + '</div><div class="v">' + v + '</div>' + (n ? '<div class="s">' + n + '</div>' : '') + '</div>'; };
       out(p, 'f', '<p class="firmtip">' + f[1] + '</p>' + (ok
         ? '<div class="jstats">' + stat(k[0], k[1]) + (f[0] === 2 ? (c.meth === 'venit' ? stat('Multiplul la vânzare', nf2.format(w.M) + '×', 'azi ' + nf2.format(c.M0) + '×') : stat('SDE la vânzare', shortEur(w.base), 'azi ' + shortEur(c.V0.base))) : stat('EBITDA la ' + c.R + ' de ani', shortEur(w.ER), 'azi ' + shortEur(c.E0))) + stat('Cifra de afaceri', shortEur(w.CA), 'de ' + nf2.format(w.X) + ' ori firma de azi') + stat('Stadiul', stCA(w.CA).a, 'azi ' + a.a) + '</div>'
@@ -1448,7 +1440,7 @@
     },
     update: function (p, c) {
       var t = tintaMin(c);
-      var top = c.FN.ok ? 'Freedom number ' + shortEur(c.FN.fn) + ' la ' + ani(c.R) : 'capitolul următor';
+      var top = fnK() + ' ' + fnV(c) + ' la ' + ani(c.R);
       out(p, 'mtn', mountainSVG([['Vârful', top], ['Trei ani · anul ' + (t ? t.y : c.YA), t ? shortEur(t.ca) + ' cifră de afaceri' : '-'], ['12 trimestre', 'anul tău antreprenorial'], ['12 săptămâni', 'anul echipei']]));
       out(p, 'ml', [
         ['Vârful', 'Capitolul următor', 'Freedom number. Nu se schimbă de la un an la altul.'],
@@ -1684,7 +1676,7 @@
     { n: 'Criza de control', e: 'Ghepard · Constructor', r: 'Managerii lucrează fără coordonare.', b: 'Bugete, raportare și ședințe de coordonare.' },
     { n: 'Criza de birocrație', e: 'Leu · Campion', r: 'Deciziile se mișcă tot mai greu.', b: 'Decizii mai aproape de client și mai puține niveluri.' }
   ];
-  function stPathMin(c) { var pk = state.alegere; return pk === 1 ? 3 : pk ? 4 : null; }
+  function stPathMin(c) { var pk = state.alegere; return pk ? 4 : null; }
   function stTarget(c) { var m = stPathMin(c), a = state.stAzi; if (state.stTinta != null) return state.stTinta; if (m != null) return Math.max(m, a == null ? 0 : a); return a == null ? null : Math.min(5, a + 1); }
   function stEye(n) { return '<div class="eyebrow">Stadiile firmei · pasul ' + n + ' din 3</div>'; }
   function pathNeed(c) {
@@ -1716,7 +1708,7 @@
     update: function (p, c) {
       var a = state.stAzi, t = stTarget(c), m = stPathMin(c);
       p.querySelector('#stg').innerHTML = STADII.map(function (x, i) {
-        var tags = (i === a ? '<span class="ptag you">Azi</span>' : '') + (i === t && t !== a ? '<span class="ptag tgt">Ținta</span>' : '') + (m === i ? '<span class="ptag ales">Cerut de calea ' + state.alegere + '</span>' : '');
+        var tags = (i === a ? '<span class="ptag you">Azi</span>' : '') + (i === t && t !== a ? '<span class="ptag tgt">Ținta</span>' : '') + (m === i ? '<span class="ptag ales">Cerut de calea ta</span>' : '');
         return '<button type="button" class="stc' + (i === a ? ' azi' : '') + (i === t && t !== a ? ' tgt' : '') + '" data-st="' + i + '" aria-pressed="' + (i === a || i === t) + '"><span class="stn">' + x.a + '</span><b>' + x.n + '</b><span class="stw">' + x.w + '</span><span class="stp">' + x.p + '</span><span class="sttag">' + tags + '</span></button>';
       }).join('');
       out(p, 'need', pathNeed(c));
@@ -1725,7 +1717,7 @@
       out(p, 'res', '<div class="jstats"><div><div class="k">Azi</div><div class="v">' + STADII[a].n + '</div><div class="s">stadiul ' + (a + 1) + ' din 7</div></div>' +
         '<div><div class="k">Anul țintă</div><div class="v" style="color:var(--accent)">' + (t != null ? STADII[t].n : '-') + '</div><div class="s">' + (state.stTinta == null ? 'propus din calea aleasă; îl poți schimba' : 'ales de tine') + '</div></div>' +
         '<div><div class="k">Crize de trecut</div><div class="v">' + n + '</div><div class="s">' + (n ? CRIZE.slice(a, t).map(function (k) { return k.n; }).join(', ') : (t != null && t < a ? 'ținta e sub stadiul de azi' : 'rămâi în același stadiu')) + '</div></div></div>' +
-        (low ? '<p class="verdict no" style="font-size:1.1rem">Ținta e sub ce cere calea ' + state.alegere + '.<small>Ori ridici ținta la ' + STADII[m].n + ', ori schimbi calea.</small></p>' : ''));
+        (low ? '<p class="verdict no" style="font-size:1.1rem">Ținta e sub ce cere calea ta.<small>Ori ridici ținta la ' + STADII[m].n + ', ori schimbi calea.</small></p>' : ''));
     }
   };
   R.crize = {
@@ -1826,7 +1818,7 @@
     return rows;
   }
   function pathInfo(c) {
-    var pk = state.alegere || 1, w = [c.w1, c.w2, c.w3][pk - 1], nm = ['Las un portofoliu', 'Vând firma', 'Trăiesc din firmă'][pk - 1];
+    var pk = state.alegere || 2, w = wOf(c, pk), nm = CALE_NUME[pk - 1];
     return { pk: pk, w: w, nm: nm, ales: !!state.alegere };
   }
   R.tR = {
@@ -1852,7 +1844,7 @@
     bind: function (p) { bindTerms(p); },
     update: function (p, c) {
       destInit(c); var pi = pathInfo(c), w = pi.w, t = tinta4(c);
-      out(p, 'rtop', '<div class="jstats"><div><div class="k">Freedom number</div><div class="v" style="color:var(--accent)">' + (c.FN.ok ? shortEur(c.FN.fn) : '-') + '</div><div class="s">la ' + ani(c.R) + ', pentru ' + ani(c.n2) + ' de capitol următor</div></div>' +
+      out(p, 'rtop', '<div class="jstats"><div><div class="k">' + fnK() + '</div><div class="v" style="color:var(--accent)">' + fnV(c) + '</div><div class="s">la ' + ani(c.R) + ', pentru ' + ani(c.n2) + ' de capitol următor</div></div>' +
         '<div><div class="k">Calea aleasă</div><div class="v vtxt">' + pi.nm + '</div></div>' +
         '<div><div class="k">Cifra de afaceri la ' + ani(c.R) + '</div><div class="v">' + (w && w.status !== 'imposibil' ? shortEur(w.CA) : '-') + '</div><div class="s">' + (w && w.status !== 'imposibil' ? gfmt(w.g) + ' pe an după anul ' + (t ? t.y : 4) : '') + '</div></div>' +
         '<div><div class="k">Anul 4</div><div class="v">' + shortEur(destCalc().ST) + '</div><div class="s">cifra de afaceri din harta destinației</div></div></div>');
@@ -2162,7 +2154,7 @@
     var who = '<div class="who"><span>Antreprenor</span><b>' + opVal(state.ctNume) + '</b><span>Firma</span><b>' + opVal(state.ctFirma) + '</b><span>Locul și data</span><b>' + (state.ctLoc && state.ctLoc.trim() ? esc(state.ctLoc.trim()) + ', ' : '') + dt + '</b></div>';
     var p1 = '<section class="oppage"><header class="hd"><div><div class="kick">Noul Act Constitutiv</div><h1>Firma mea, în termenii mei</h1></div>' + who + '</header>' +
       '<div class="oprolebox"><div class="sec">Rolul firmei în viața mea</div><p class="oprole">' + opVal(r.fraza) + '</p></div>' +
-      '<div class="nums"><div><div class="k">Freedom number</div><div class="b">' + (c.FN.ok ? shortEur(c.FN.fn) : '-') + '</div><div class="s">la ' + ani(c.R) + '</div></div>' +
+      '<div class="nums"><div><div class="k">' + fnK() + '</div><div class="b">' + fnV(c) + '</div><div class="s">la ' + ani(c.R) + '</div></div>' +
       '<div><div class="k">Calea aleasă</div><div class="b bs">' + pi.nm + '</div></div>' +
       '<div><div class="k">Cifra de afaceri, țintă</div><div class="b">' + (tt ? shortEur(tt.ca) : '-') + '</div><div class="s">' + (tt ? 'în anul ' + tt.y : '') + '</div></div>' +
       '<div><div class="k">Cifra de afaceri, final</div><div class="b">' + (ok ? shortEur(w.CA) : '-') + '</div><div class="s">la ' + ani(c.R) + '</div></div></div>' +
@@ -2282,7 +2274,7 @@
     o += cap(8, 'Ritmul', 'Ce pot ține și de ce.', rows((priv ? [['Ce a dus firma până aici', val(d.a)], ['Ce e fragil', val(d.b)], ['Primul blocaj', val(d.c)], ['De ce acest ritm', (d.w || []).map(val).filter(Boolean).join(' → ')]] : []).concat([['Ritmul ales', state.ritmAles != null ? RITMS[state.ritmAles].n : ''], ['Sprinturi', state.vzSprinturi ? state.vzSprinturi + ' · ' + nf2.format(state.vzRitm) + '% pe an, apoi ' + nf2.format(state.vzRitm2) + '%' : ''], ['An de setup', state.setup ? 'da, ' + nf2.format(state.vzRitm0) + '%' : '']])) + (f && state.vzSprinturi ? tab(['Anul', 'Vârsta', 'Cifra de afaceri', 'EBITDA'], c.curba.map(function (x) { return [x.i, x.age, eur(x.CA), eur(x.eb)]; })) : ''));
     if (w) {
       var un = state.alegere === 3 ? ' / an' : '';
-      o += cap(9, 'Calea mea: ' + pi.nm, '', rows([['Cifra de afaceri la ' + ani(c.R), eur(w.CA)], ['EBITDA la ' + ani(c.R), eur(w.ER)], ['Capital strâns', eur(w.sim.capRet)], ['Net din vânzare', w.saleNet ? eur(w.saleNet) : ''], ['Multiplul la vânzare', w.M ? nf2.format(w.M) + '×' : ''], ['Dividendul din board', w.d1 ? eur(w.d1.net) + ' / an' : ''], ['Ținta', state.alegere === 3 ? eur(w.nevoie) + ' / an' : (c.FN.ok ? eur(c.FN.fn) : '')], [w.gap > 0.5 ? 'Lipsesc' : 'Peste țintă', eur(Math.abs(w.gap)) + un], ['Pârghii alese', w.gap > 0.5 ? [state.pgMarja ? 'marjă +' + state.pgMarja + ' p.p.' : '', state.pgVarsta ? 'retragere +' + ani(state.pgVarsta) : '', state.pgNivel ? 'nivel dorit −' + state.pgNivel + '%' : '', state.pgMultiplu ? 'multiplu +' + state.pgMultiplu + '×' : ''].filter(Boolean).join(', ') : ''], ['Ce fel de firmă', (FIRME.filter(function (x) { return x[0] === state.alegere; })[0] || [])[1]]]));
+      o += cap(9, 'Calea mea: ' + pi.nm, '', rows([['Cifra de afaceri la ' + ani(c.R), eur(w.CA)], ['EBITDA la ' + ani(c.R), eur(w.ER)], ['Capital strâns', eur(w.sim.capRet)], ['Portofoliul lăsat la final', eur(Math.max(0, w.sim.end))], ['Net din vânzare', w.saleNet ? eur(w.saleNet) : ''], ['Multiplul la vânzare', w.M ? nf2.format(w.M) + '×' : ''], ['Dividendul din board', w.d1 ? eur(w.d1.net) + ' / an' : ''], ['Ținta', state.alegere === 3 ? eur(w.nevoie) + ' / an' : (c.FN.ok ? eur(c.FN.fn) : '')], [w.gap > 0.5 ? 'Lipsesc' : 'Peste țintă', eur(Math.abs(w.gap)) + un], ['Pârghii alese', w.gap > 0.5 ? [state.pgMarja ? 'marjă +' + state.pgMarja + ' p.p.' : '', state.pgVarsta ? 'retragere +' + ani(state.pgVarsta) : '', state.pgNivel ? 'nivel dorit −' + state.pgNivel + '%' : '', state.pgMultiplu ? 'multiplu +' + state.pgMultiplu + '×' : ''].filter(Boolean).join(', ') : ''], ['Ce fel de firmă', (FIRME.filter(function (x) { return x[0] === state.alegere; })[0] || [])[1]]]));
     }
     o += cap(10, 'Stadiile firmei', '', a != null ? rows([['Azi', STADII[a].a + ' · ' + STADII[a].n], ['Ținta', tg != null ? STADII[tg].a + ' · ' + STADII[tg].n : '']].concat(tg != null && tg > a ? CRIZE.slice(a, tg).map(function (k, j) { return [k.n, val((state.stPlan || [])[a + j])]; }) : [])) : '');
     o += cap(11, 'Primul an', 'Cele 12 trimestre și primele 12 săptămâni.', rows([['Ținta la ' + (tt ? 'anul ' + tt.y : '3 ani'), tt ? eur(tt.ca) : ''], ['Inițiativa 1', val((state.initiative || [])[0])], ['Inițiativa 2', val((state.initiative || [])[1])], ['Inițiativa 3', val((state.initiative || [])[2])]]));
@@ -2361,7 +2353,7 @@
   }
   /** Cifrele-cheie ale unui participant, pentru panoul „Sala”. */
   function summary(s) {
-    var c = calc(s), pk = s.alegere, w = pk ? [c.w1, c.w2, c.w3][pk - 1] : c.w1;
+    var c = calc(s), pk = s.alegere, w = wOf(c, pk);
     var ok = w && w.status !== 'imposibil';
     return { varsta: c.varsta, R: c.R, E: c.E, ca: s.ca, marja: c.marja, divNet: c.div0.net, FN: c.FN.ok ? c.FN.fn : NaN, cale: pk, caR: ok ? w.CA : NaN, g: ok ? w.g : NaN, g1: c.g1, X: ok ? w.X : NaN, ritmAles: s.ritmAles, metoda: s.valMetoda || 'ebitda', M0: c.M0, MT: c.MT };
   }
@@ -2391,7 +2383,7 @@
     r('Fără randament', eur(c.FNsimple), 'trai ' + ani(c.n2) + ' + plăți unice + fonduri' + (c.minim ? ' + suma lăsată' : ''), '28');
     if (F.ok) {
       r('Nivelul de trai, cu randament', eur(F.life), 'cheltuieli la început de an', '29'); r('Plățile unice, cu randament', eur(F.oo), '', '29'); r('Fondurile', eur(F.fonduri), 'întregi', '29'); r('Randamentul fondurilor', '−' + eur(F.fondPv), eur(F.fondRand) + ' pe an, adus la azi', '29');
-      if (F.legacy) r('Suma lăsată în urmă', eur(F.legacy), eur(s.legacy) + ' adus la azi', '18'); if (F.term) r('Capitalul lăsat întreg', eur(F.term), 'adus la azi', '18');
+      if (F.legacy) r('Ce rămâne la final', eur(F.legacy), eur(F.rest) + ' adus la azi', '28');
       r('FREEDOM NUMBER', eur(F.total), 'suma rândurilor', '29');
     }
     r('Portofoliul de azi', eur(c.eco), s.economii != null ? 'introdus manual' : 'sugerat: ' + eur(c.ecoVen) + ' / ' + P2(c.ecoRand), '29');
@@ -2414,7 +2406,7 @@
   }
 
   var fmt = { eur: eur, shortEur: shortEur, pct: pct, ani: ani, gfmt: gfmt, xfmt: xfmt, nf0: nf0, nf2: nf2 };
-  var CALE_NUME = ['Las un portofoliu', 'Vând firma', 'Trăiesc din firmă'];
+  var CALE_NUME = ['', 'Vând firma', 'Trăiesc din firmă'];
   var RITM_NUME = RITMS.map(function (r) { return r.n; });
 
 export { PAGES, printDoc, fresh, exemplu, normalize, calc, mount, renderContract, fingerprint, splitPrivate, mergePrivate, summary, control, fmt, CALE_NUME, RITM_NUME };
