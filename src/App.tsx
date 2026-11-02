@@ -1,3 +1,4 @@
+import { Control } from "./pages/Control";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Login } from "./pages/Login";
 import { Participant } from "./pages/Participant";
@@ -11,6 +12,7 @@ export default function App() {
         <Route path="/" element={<Login />} />
         <Route path="/participant" element={<Participant />} />
         <Route path="/teacher" element={<Teacher />} />
+        <Route path="/control" element={<Control />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Toasts />

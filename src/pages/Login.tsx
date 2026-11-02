@@ -80,7 +80,7 @@ export function Login() {
           <img className="brand-logo" src="/logo-cfo.png" alt="CFO" />
           <div>
             <div className="brand-title">Freedom Number</div>
-            <div className="brand-sub">Workshop · Contractul cu firma · cfo.ro</div>
+            <div className="brand-sub">Workshop · Noul Act Constitutiv · cfo.ro</div>
           </div>
         </div>
         <div className="roles">
@@ -119,7 +119,7 @@ export function Login() {
             {busy ? "Mă conectez…" : "Intră"}
           </button>
         </form>
-        <div className="login-foot">Cifrele tale rămân ale tale: le vede doar prezentatorul, ca să te poată ajuta în sală. Nu se publică nicăieri.</div>
+        <div className="login-foot">Cifrele tale le vede doar prezentatorul, ca să te poată ajuta în sală. Răspunsurile personale rămân pe dispozitivul tău.</div>
       </div>
     </div>
   );

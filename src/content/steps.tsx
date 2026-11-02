@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Coperta, Multumire, Speaker } from "../slides/deschidere";
+import { Amanat, Calcul, CapitolUrm, Citat, Coperta, Multumire, Obiective, Obtii, Ozn, Pace, Perechi, Regula, Speaker, Teza, ViataAzi } from "../slides/deschidere";
 import { FreedomPage, stepIdOfPage } from "../freedom/FreedomPage";
 import { ContractStep } from "../freedom/ContractStep";
 import { PAGES } from "../freedom/engine";
@@ -22,43 +22,54 @@ export interface Step {
 }
 
 export const CHAPTERS: Chapter[] = [
-  { id: "deschidere", title: "Deschidere", short: "Deschidere" },
-  { id: "timp", title: "Timpul pe care îl avem", short: "Timpul" },
-  { id: "firma", title: "Firma azi", short: "Firma" },
-  { id: "sume", title: "Cele trei sume", short: "Sumele" },
-  { id: "cai", title: "Trei căi către freedom number", short: "Căile" },
-  { id: "ritm", title: "Ritmul firmei", short: "Ritmul" },
-  { id: "an", title: "Anul antreprenorial", short: "Anul 1" },
-  { id: "terms", title: "Contractul cu firma · T.E.R.M.S.", short: "Contractul" },
+  { id: "deschidere", title: "Introducere", short: "Introducere" },
+  { id: "obiective", title: "Obiectivele tale personale", short: "Obiective" },
+  { id: "vehicul", title: "Vehiculul", short: "Vehiculul" },
+  { id: "ritm", title: "Ritmul", short: "Ritmul" },
+  { id: "cale", title: "Calea ta", short: "Calea" },
+  { id: "stadii", title: "Stadii, crize și exituri", short: "Stadii" },
+  { id: "an", title: "Primul an antreprenorial", short: "Anul 1" },
+  { id: "terms", title: "T.E.R.M.S.", short: "T.E.R.M.S." },
+  { id: "act", title: "Actul constitutiv", short: "Actul" },
 ];
 
-/** Capitolul fiecărei pagini din motor; ordinea paginilor e cea din PAGES (ca în HTML). */
-const CHAPTER_OF: Record<string, string> = {
-  qSperanta: "timp", qRetragere: "timp", qAni: "timp", timp: "timp",
-  firma: "firma",
-  buget: "sume", oneoff: "sume", fonduri: "sume", productivi: "sume", freedom: "sume",
-  cai1: "cai", cai2: "cai", cai3: "cai", cale1: "cai", multiplu: "cai", cale2: "cai", cale3: "cai", concluzii: "cai",
-  ritm1: "ritm", ritmA: "ritm", ritmB: "ritm", ritmC: "ritm", ritm2: "ritm", ritm3: "ritm",
-  munte: "an", anEnt: "an", dest: "an", plan: "an",
-  tIntro: "terms", tIntro2: "terms", tT: "terms", tE: "terms", tR: "terms", tM: "terms", tS: "terms", contract: "terms",
+/** Capitolul fiecărei pagini din motor: primul id din fiecare capitol, în ordinea din PAGES. */
+const CHAPTER_START: Record<string, string> = {
+  amanat: "deschidere", calcul: "obiective", spv: "vehicul", ritm1: "ritm", cai: "cale", stadii: "stadii", anEchipa: "an", tIntro: "terms", contract: "act",
 };
-/** Paginile în care participantul completează ceva. */
-const WORK = new Set(["qSperanta", "qRetragere", "qAni", "firma", "buget", "oneoff", "fonduri", "freedom", "multiplu", "cale3", "concluzii", "ritm1", "ritmA", "ritmB", "ritmC", "ritm2", "ritm3", "dest", "plan", "tIntro", "tT", "tE", "tR", "tM", "tS", "contract"]);
+/** Paginile în care participantul completează ceva în aplicație. */
+const WORK = new Set(["cai", "cale", "viataDorita", "ceCauti", "rolFirma", "qSperanta", "qRetragere", "qAni", "venituri", "buget", "buget1", "buget2", "oneoff", "fonduri", "urma", "freedom", "freedom2", "spv2", "firma", "exitQ", "exitUnde", "multiplu", "multipluDate", "multipluNote", "multipluCalc", "firmaCale", "concluzii", "ritm1", "ritmA", "ritmB", "ritmC", "ritm2", "ritm3", "stadii", "crize", "exitNext", "anEnt", "dest", "plan", "tIntro", "tT", "tE", "tR", "tM", "tS", "contract"]);
 
 export { stepIdOfPage };
 
-export const STEPS: Step[] = [
-  { id: "fn-coperta", chapter: "deschidere", title: "Freedom Number", slide: <Coperta /> },
-  { id: "fn-multumire", chapter: "deschidere", title: "Mulțumim că ai venit", slide: <Multumire /> },
-  { id: "fn-speaker", chapter: "deschidere", title: "Cine îți vorbește", slide: <Speaker /> },
-  ...PAGES.map((p) => ({
+/** Primele slide-uri continuă limbajul coperții: cele fără câmpuri sunt slide-uri React, exercițiile rămân pe motor. */
+const INTRO: Record<string, ReactNode> = {
+  amanat: <Amanat />, obtii: <Obtii />, regula: <Regula />, teza: <Teza />, viataAzi: <ViataAzi />, perechi: <Perechi />, capitolUrm: <CapitolUrm />, calcul: <Calcul />, pace: <Pace />, spv: <Ozn />,
+};
+const INTRO_WORK = new Set(["viataDorita", "ceCauti", "rolFirma"]);
+/** Paginile de introducere a datelor: centrate, minimaliste, cu litere mari. */
+const FORM = new Set(["cai", "punte", "spv3", "productivi", "productivi3", "productivi2", "exitLinie", "exitUnde", "qSperanta", "qRetragere", "qAni", "venituri", "buget", "buget1", "buget2", "oneoff", "fonduri", "urma", "freedom", "freedom2", "spv2", "firma", "exitQ", "multiplu", "multipluDate", "multipluNote", "multipluCalc", "cale", "firmaCale", "ritm1", "ritmA", "ritmB", "ritmC", "ritm3", "exitNext", "dest", "plan", "tIntro", "tT", "tE", "tR", "tM", "tS"]);
+
+let chapter = "deschidere";
+const pageSteps: Step[] = PAGES.map((p) => {
+  chapter = CHAPTER_START[p.id] ?? chapter;
+  return {
     id: stepIdOfPage(p.id),
-    chapter: CHAPTER_OF[p.id] ?? "sume",
+    chapter,
     title: p.t,
     kind: (WORK.has(p.id) ? "work" : "slide") as Step["kind"],
     page: p.id,
-    slide: p.id === "contract" ? <ContractStep /> : <FreedomPage id={p.id} />,
-  })),
+    slide: p.id === "contract" ? <ContractStep /> : (INTRO[p.id] ?? <FreedomPage id={p.id} intro={INTRO_WORK.has(p.id)} form={FORM.has(p.id)} />),
+  };
+});
+
+export const STEPS: Step[] = [
+  { id: "fn-coperta", chapter: "deschidere", title: "Turnul de Control", slide: <Coperta /> },
+  { id: "fn-multumire", chapter: "deschidere", title: "Îți mulțumim că ești aici!", slide: <Multumire /> },
+  { id: "fn-citat", chapter: "deschidere", title: "Principala caracteristică a unui antreprenor", slide: <Citat /> },
+  { id: "fn-speaker", chapter: "deschidere", title: "Cine îți vorbește", slide: <Speaker /> },
+  { id: "fn-obiective", chapter: "deschidere", title: "Întâlnirea de kick-off", slide: <Obiective /> },
+  ...pageSteps,
 ];
 
 export const STEP_INDEX: Record<string, number> = Object.fromEntries(STEPS.map((s, i) => [s.id, i]));

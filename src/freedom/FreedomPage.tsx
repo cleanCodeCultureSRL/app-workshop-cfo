@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { mount } from "./engine";
+import { CoverSlide } from "../slides/ui";
 import { FN_FIELD, demoState, isForeign, participantState, persistDemo, persistParticipant, useGeneration } from "./state";
 import { useSlide } from "../slides/SlideContext";
 import { useStore } from "../lib/store";
@@ -13,7 +14,7 @@ export const stepIdOfPage = (pageId: string) => "fn-" + pageId;
  * Pagina e randată de motor (DOM clasic) în div-ul .fn; React o remontează doar când se schimbă pagina,
  * rolul, sau când starea vine din altă parte (server la reconectare, reset).
  */
-export function FreedomPage({ id, before, after }: { id: string; before?: ReactNode; after?: ReactNode }) {
+export function FreedomPage({ id, before, after, intro, form }: { id: string; before?: ReactNode; after?: ReactNode; intro?: boolean; form?: boolean }) {
   const { mode } = useSlide();
   const participant = mode === "participant";
   const ref = useRef<HTMLDivElement>(null);
@@ -39,13 +40,18 @@ export function FreedomPage({ id, before, after }: { id: string; before?: ReactN
     return () => h.destroy();
   }, [id, participant, gen, ext]);
 
+  const body = (
+    <>
+      {before}
+      <div className={intro ? "fn fn-dark" : form ? "fn fn-form" : "fn"} ref={ref} />
+      {after}
+    </>
+  );
+  // exercițiile din introducere stau pe același fundal ca slide-urile din jurul lor
+  if (intro) return <CoverSlide img="/kickoff.jpg" className="intro intro-work">{body}</CoverSlide>;
   return (
-    <section className="slide slide-white">
-      <div className="slide-in fn-in">
-        {before}
-        <div className="fn" ref={ref} />
-        {after}
-      </div>
+    <section className={form ? "slide slide-white slide-form" : "slide slide-white"}>
+      <div className="slide-in fn-in">{body}</div>
     </section>
   );
 }

@@ -183,3 +183,14 @@ label .input { margin-top: 6px; }
 @keyframes stuck-pulse { 0%, 100% { background: #e11d48; } 50% { background: #f43f5e; } }
 .participant.is-stuck .deck-ui { top: 48px; }
 .participant.is-stuck .deck-fill section.slide { padding-top: 140px; }
+
+/* tabelul de control al prezentatorului */
+.ctl { max-width: 1040px; margin: 0 auto; padding: 32px 20px 64px; color: #000942; background: #fff; font: 400 15px/1.45 Inter, Arial, sans-serif; }
+.ctl h1 { margin: 0 0 4px; font-size: 30px; }
+.ctl h2 { margin: 28px 0 8px; font-size: 18px; }
+.ctl table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.ctl th, .ctl td { padding: 6px 10px; border-bottom: 1px solid #e3e7ef; text-align: left; vertical-align: top; }
+.ctl th { font-size: 13px; font-weight: 600; color: #5a6472; }
+.ctl td:nth-child(1) { width: 30%; } .ctl td:nth-child(2) { width: 18%; font-weight: 700; white-space: nowrap; } .ctl td:nth-child(3) { color: #4a5568; } .ctl td:nth-child(4) { width: 9%; white-space: nowrap; color: #5a6472; }
+.ctl-w td { background: #fff4e6; }
+.ctl-chk { margin-top: 20px; padding: 12px 16px; border-radius: 10px; background: #fff4e6; } .ctl-chk h2 { margin: 0 0 6px; } .ctl-chk ul { margin: 0; padding-left: 20px; }

@@ -23,6 +23,12 @@ let pendingFields: Record<string, string> = {};
 let fieldTimer: number | null = null;
 let manuallyClosed = false;
 
+// În dev, HMR reevaluează modulul și pierde socketul, iar butoanele ar trimite în gol: reîncărcăm pagina.
+if (import.meta.hot) {
+  if (import.meta.hot.data.loaded) location.reload();
+  import.meta.hot.data.loaded = true;
+}
+
 function url() {
   const proto = location.protocol === "https:" ? "wss:" : "ws:";
   return `${proto}//${location.host}/ws`;
@@ -152,6 +158,9 @@ function handle(msg: ServerMessage) {
     case "reset": {
       // Sesiune de la zero. Participant: uită tot ce a scris (și din localStorage) și reintră cu numele.
       pendingFields = {};
+      try {
+        localStorage.removeItem("fn.private");
+      } catch {}
       const role = getState().session?.role;
       setState({ fields: {}, deleted: {}, viewStepId: null, following: true, stuck: false, participants: [], me: null });
       if (role === "participant") {

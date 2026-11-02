@@ -1,12 +1,28 @@
 // Starea Freedom Number a celui care se uită la slide.
 // Participant: obiectul lui, serializat în câmpul `fn.state` (store → localStorage → server, ca orice câmp).
+// Răspunsurile personale stau separat, doar în localStorage, și nu ajung nici la server, nici la prezentator.
 // Prezentator: firma-exemplu (fresh()), ținută în browserul proiectorului; se poate reseta oricând.
 import { useSyncExternalStore } from "react";
-import { fresh, normalize, type FnState } from "./engine";
+import { fresh, mergePrivate, normalize, splitPrivate, type FnState } from "./engine";
 import { getState } from "../lib/store";
 import { setField } from "../lib/ws";
 
 export const FN_FIELD = "fn.state";
+const PRIVATE_LS = "fn.private";
+
+function readPrivate(): unknown {
+  try {
+    const raw = localStorage.getItem(PRIVATE_LS);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+function writePrivate(priv: unknown) {
+  try {
+    localStorage.setItem(PRIVATE_LS, JSON.stringify(priv));
+  } catch {}
+}
 
 export function parseState(raw: string | null | undefined): FnState {
   if (!raw) return fresh();
@@ -31,15 +47,22 @@ function prefill(s: FnState) {
 export function participantState(): FnState {
   const raw = getState().fields[FN_FIELD] ?? null;
   if (pState && raw === pRaw) return pState;
-  pState = parseState(raw);
+  pState = mergePrivate(parseState(raw), readPrivate());
   pRaw = raw;
   if (!raw) prefill(pState);
+  // stare veche, salvată înainte de separare: o rescriem ca răspunsurile personale să dispară de pe server
+  if (raw && raw !== JSON.stringify(splitPrivate(JSON.parse(raw)).pub)) {
+    const s = pState;
+    queueMicrotask(() => persistParticipant(s));
+  }
   return pState;
 }
 
 export function persistParticipant(s: FnState) {
   pState = s;
-  pRaw = JSON.stringify(s);
+  const { pub, priv } = splitPrivate(s);
+  writePrivate(priv);
+  pRaw = JSON.stringify(pub);
   setField(FN_FIELD, pRaw);
 }
 

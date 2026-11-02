@@ -56,7 +56,10 @@ export function calc(s: FnState): Record<string, unknown>;
 export function mount(el: HTMLElement, pageId: string, opts: MountOpts): MountHandle;
 export function renderContract(s: FnState): string;
 export function fingerprint(s: FnState): string;
+export function splitPrivate(s: FnState): { pub: FnState; priv: Record<string, unknown> };
+export function mergePrivate(s: FnState, priv: unknown): FnState;
 export function summary(s: FnState): FnSummary;
+export function control(s: FnState): { secs: { t: string; rows: { n: string; v: string; f: string; p: string; w: boolean }[] }[]; chk: string[] };
 export const fmt: {
   eur(n: number): string;
   shortEur(n: number): string;

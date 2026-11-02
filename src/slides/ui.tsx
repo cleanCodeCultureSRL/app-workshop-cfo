@@ -14,9 +14,9 @@ export function Slide({ variant = "white", children, className }: { variant?: "n
  * Copertă: fotografie pe tot ecranul, umbră navy dinspre stânga și de jos, text alb; `children` se așază la baza ecranului.
  * `pos` = object-position al fotografiei („center top” ca să nu taie capul unui om din cadru).
  */
-export function CoverSlide({ img, pos = "center", children }: { img: string; pos?: string; children: ReactNode }) {
+export function CoverSlide({ img, pos = "center", className, children }: { img: string; pos?: string; className?: string; children: ReactNode }) {
   return (
-    <section className="slide slide-white cover">
+    <section className={cx("slide slide-white cover", className)}>
       <img className="cover-bg" src={img} alt="" style={{ objectPosition: pos }} />
       <div className="cover-shade" />
       <div className="slide-in">{children}</div>

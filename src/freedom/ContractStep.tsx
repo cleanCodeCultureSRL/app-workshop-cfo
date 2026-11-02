@@ -11,7 +11,7 @@ import { cx } from "../lib/util";
 const fmtDate = (ts: number) => new Date(ts).toLocaleString("ro-RO", { day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" });
 
 /**
- * Ultimul pas: foaia de contract din motor, plus semnarea cu versiuni (v1, v2…) salvate pe server.
+ * Ultimul pas: Actul din motor, plus semnarea cu versiuni (v1, v2…) salvate pe server.
  * Prezentatorul vede foaia firmei-exemplu, fără semnare.
  */
 export function ContractStep() {
@@ -59,7 +59,7 @@ export function ContractStep() {
           <div className="eqrow">
             {viewing === null && (acts.length === 0 || changed) && (
               <button className="go" onClick={() => signAct()}>
-                {acts.length === 0 ? "Semnează contractul" : `Semnează v${last.version + 1}`}
+                {acts.length === 0 ? "Semnează Actul" : `Semnează v${last.version + 1}`}
               </button>
             )}
             <span className="small" style={{ color: "var(--muted)" }}>

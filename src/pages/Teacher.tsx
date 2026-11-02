@@ -174,6 +174,9 @@ export function Teacher() {
           <button className="btn btn-ghost" onClick={() => setGrid(true)} title="G">
             Toate
           </button>
+          <a className="btn btn-ghost" href="/control" target="_blank" rel="noreferrer">
+            Control
+          </a>
           <button
             className="btn btn-ghost"
             title="Firma-exemplu de pe proiector revine la cifrele inițiale (participanții nu sunt atinși)"

@@ -26,7 +26,7 @@ Taste prezentator: `← →` pași, `Home/End`, `G` toate slide-urile, `S` Sala,
 
 ## Conținutul: Freedom Number
 
-Slide-urile sunt cele 36 de pagini din `../Freedom Number.html` (HTML-ul primit), în ordinea de acolo, precedate de intro (copertă, mulțumire, speaker):
+Slide-urile sunt cele 38 de pagini din `../Freedom Number.html` (HTML-ul primit, plus stadiile firmei adăugate pentru kickoff-ul Turnul de Control), în ordinea de acolo, precedate de intro (copertă, mulțumire, speaker):
 
 1. **Timpul pe care îl avem** – speranța de viață, munca în cui, anii productivi, imaginea de ansamblu
 2. **Firma azi** – cifra de afaceri, profit, EBITDA, dividendul net
@@ -34,7 +34,8 @@ Slide-urile sunt cele 36 de pagini din `../Freedom Number.html` (HTML-ul primit)
 4. **Trei căi** – economii / vânzare (cu evaluarea firmei) / board, concluzii
 5. **Ritmul firmei** – unde ești, cele 3 întrebări, tabelul ritmurilor, de ce
 6. **Anul antreprenorial** – muntele, 12 luni antreprenoriale, harta destinației, flat vs buget
-7. **Contractul cu firma** – T.E.R.M.S. și contractul de semnat (cu versiuni semnate pe server, PDF, print)
+7. **Stadiile firmei** - stadiul de azi și cel din anul 4 (Practician, Optimizator, Maestru, Delegator), crizele de trecere, cu răspunsurile duse în contract
+8. **Contractul cu firma** – T.E.R.M.S. și contractul de semnat (cu versiuni semnate pe server, PDF, print)
 
 ## Unde stă codul
 
