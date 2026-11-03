@@ -435,7 +435,7 @@
     level = level || 3;
     var A0 = Math.min(30, Math.floor(c.varsta / 10) * 10), A1 = Math.max(100, Math.ceil(c.E / 10) * 10), W = 1000, L = 40, R = 40, axisY = 128;
     function X(a) { return L + (Math.min(A1, Math.max(A0, a)) - A0) / (A1 - A0) * (W - L - R); }
-    var f = 'Source Sans 3, sans-serif', fd = 'Manrope, sans-serif', o = [];
+    var f = 'Inter, sans-serif', fd = 'Inter Tight, Inter, sans-serif', o = [];
     o.push('<svg viewBox="0 0 ' + W + ' 200" role="img" aria-label="Linia timpului" class="tl-svg">');
     o.push('<line x1="' + L + '" x2="' + (W - R) + '" y1="' + axisY + '" y2="' + axisY + '" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>');
     for (var a = A0; a <= A1; a += 10) {
@@ -1000,7 +1000,7 @@
   function provBars(c, v) {
     var n = v.years.length, W = 900, H = 240, L = 70, Rr = 16, T = 18, B = 34, g0 = 0;
     var max = Math.max(v.peak, state.ca * Math.pow(1 + g0, n - 1)) * 1.1 || 1, ys = niceStep(max / 4), yMax = Math.ceil(max / ys) * ys;
-    var bw = (W - L - Rr) / n, f = 'Source Sans 3, sans-serif', o = ['<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Cifra de afaceri necesară pe ani">'];
+    var bw = (W - L - Rr) / n, f = 'Inter, sans-serif', o = ['<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Cifra de afaceri necesară pe ani">'];
     function Y(x) { return T + (1 - x / yMax) * (H - T - B); }
     for (var t = 0; t <= yMax + 1; t += ys) {
       o.push('<line x1="' + L + '" x2="' + (W - Rr) + '" y1="' + Y(t) + '" y2="' + Y(t) + '" stroke="var(--line)"/>');
@@ -1425,8 +1425,8 @@
       var x = P[i][0], y = P[i][1], lx = x + 40;
       o.push('<line x1="' + (x + 14) + '" y1="' + y + '" x2="' + (lx - 6) + '" y2="' + y + '" stroke="var(--ink)" stroke-width="2"/>');
       o.push('<circle cx="' + x + '" cy="' + y + '" r="13" fill="var(--surface)" stroke="' + (i === 2 ? 'var(--accent)' : 'var(--ink)') + '" stroke-width="5"/>');
-      o.push('<text x="' + lx + '" y="' + (y - 3) + '" font-family="Manrope, sans-serif" font-weight="700" font-size="21" fill="' + (i === 2 ? 'var(--accent)' : 'var(--ink)') + '">' + t[0] + '</text>');
-      o.push('<text x="' + lx + '" y="' + (y + 20) + '" font-family="Source Sans 3, sans-serif" font-size="15" fill="var(--muted)">' + t[1] + '</text>');
+      o.push('<text x="' + lx + '" y="' + (y - 3) + '" font-family="Inter Tight, Inter, sans-serif" font-weight="700" font-size="21" fill="' + (i === 2 ? 'var(--accent)' : 'var(--ink)') + '">' + t[0] + '</text>');
+      o.push('<text x="' + lx + '" y="' + (y + 20) + '" font-family="Inter, sans-serif" font-size="15" fill="var(--muted)">' + t[1] + '</text>');
     });
     o.push('</svg>');
     return o.join('');
@@ -1603,7 +1603,7 @@
     }
   };
   function planChart(pl) {
-    var W = 900, H = 250, L = 70, Rr = 16, T = 18, B = 34, n = 12, fnt = 'Source Sans 3, sans-serif';
+    var W = 900, H = 250, L = 70, Rr = 16, T = 18, B = 34, n = 12, fnt = 'Inter, sans-serif';
     var max = Math.max.apply(null, pl.rows.map(function (r) { return Math.max(r.fv, r.bv); })) * 1.12, ys = niceStep(max / 4), yMax = Math.ceil(max / ys) * ys, bw = (W - L - Rr) / n;
     var o = ['<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Creșterea flat și bugetul pe cele 12 luni antreprenoriale">'];
     function Y(v) { return T + (1 - v / yMax) * (H - T - B); }

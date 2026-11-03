@@ -9,8 +9,8 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @theme {
-  --font-sans: "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Manrope", "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Inter Tight", "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --color-navy: #000942;
   --color-navy-dark: #0b1122;
@@ -198,3 +198,16 @@
 .fn.fn-dark .eyebrow, .fn.fn-dark .q, .fn.fn-dark .note, .fn.fn-dark .dqq { text-align: center; margin-inline: auto; }
 .slide.cover .cover-card .stat-l { font-size: 15px; }
 .slide.cover .cover-card .cover-facts .stat-l { font-size: 14px; }
+
+/* Proiectorul: pe ecranul prezentatorului textul crește cu circa 15%, iar textul secundar și liniile devin mai închise. Ecranele participanților rămân neschimbate. */
+html:has(.teacher) { font-size: 18.4px; }
+.teacher .slide-white { --s-muted: #3a4352; --s-line: #cbd5e1; }
+.teacher .slide-navy { --s-muted: rgba(255, 255, 255, 0.84); }
+.teacher .slide small, .teacher .stat-l, .teacher .kicker { font-size: 15px; }
+.teacher .lead { font-size: 22px; }
+.teacher .stat-v { font-size: 25px; }
+.teacher .intro-hout { font-size: 19px; color: rgba(255, 255, 255, 0.88); }
+.teacher .fn { --muted: #3a4352; --line: #cbd5e1; font-size: 18.5px; }
+.teacher .fn.fn-dark { --muted: rgba(255, 255, 255, 0.86); --line: rgba(255, 255, 255, 0.28); }
+/* Bara, meniul și panoul Sala rămân la dimensiunea de dinainte: se mărește doar slide-ul. */
+.teacher-bar, .teacher-side, .teacher .room-overlay, .teacher .grid-overlay, .stuck-bar, .toasts { zoom: 0.87; }
