@@ -81,7 +81,7 @@ const Handout = ({ children }: { children: ReactNode }) => (
 
 export function Citat() {
   return (
-    <Intro kicker="Principala caracteristică a unui antreprenor?" title="„Un antreprenor alege să trăiască așa cum majoritatea nu este dispusă să o facă, pentru a putea trăi tot restul vieții așa cum aceștia nici nu pot visa.”" titleClass="intro-citat" />
+    <Intro kicker="Principala caracteristică a unui antreprenor?" title="„Un antreprenor alege să trăiască așa cum cei mai mulți nu sunt dispuși să o facă, pentru a putea trăi tot restul vieții așa cum aceștia nici nu pot visa.”" titleClass="intro-citat" />
   );
 }
 
