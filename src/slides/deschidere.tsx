@@ -107,7 +107,7 @@ export function Obiective() {
 
 export function Amanat() {
   return (
-    <Intro kicker="Deschidere" title="Ce ai amânat până când firma îți va permite?" lead="Scrie un singur lucru. Nu îl vede nimeni.">
+    <Intro kicker="Deschidere" title="Ce ai amânat în viața ta până când firma îți va permite?" lead="Scrie un singur lucru. Nu îl vede nimeni.">
       <Handout>Foaia de introspecție, întrebarea 1.</Handout>
     </Intro>
   );
@@ -164,7 +164,7 @@ export function ViataAzi() {
       <div className="grid g2 intro-cards">
         {[
           ["Funcționează", "Ce vrei să nu pierzi?"],
-          ["Fragil", "Ce merge azi doar pentru că intervii tu sau un singur om?"],
+          ["Fragil", "Ce merge azi doar pentru că tu intervii acolo?"],
           ["Nu mai funcționează", "Ce te ține treaz?"],
           ["Prețul", "Ce sacrifici azi pentru firmă și nu mai ești dispus să sacrifici?"],
         ].map(([k, q]) => (
